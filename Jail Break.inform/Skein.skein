@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">Jail Break</command>
+        <result xml:space="preserve">
+
+
+You beg to the guard to let you free. "If you can't do the time, don't do the crime," he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them.
+
+Jail Break
+An Interactive Fiction by tendo19
+Release 1 / Serial number 190308 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Your Cell
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
