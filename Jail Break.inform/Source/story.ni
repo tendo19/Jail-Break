@@ -47,3 +47,12 @@ The description is "You're free! Now you don't have to sleep next to your stinky
 An every turn rule:
 	if player is in freedom:
 		end the story saying "Yay!".
+
+Joe is a man in cell room 2.
+The description of Joe is "..."
+
+Security Guard 1 is a man in the south security room.
+The description of security guard 1 is "..."
+
+Security Guard 2 is a man in the east security room.
+The description of security guard 2 is "..."
