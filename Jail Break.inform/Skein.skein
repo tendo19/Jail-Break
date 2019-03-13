@@ -11,11 +11,126 @@ You beg to the guard to let you free. "If you can't do the time, don't do the cr
 
 Jail Break
 An Interactive Fiction by tendo19
-Release 1 / Serial number 190308 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
-Your Cell
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1009"></child>
+            <child nodeId="node-1003"></child>
+        </children>
+    </item>
+    <item nodeId="node-1003">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1004"></child>
+        </children>
+    </item>
+    <item nodeId="node-1004">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1005"></child>
+        </children>
+    </item>
+    <item nodeId="node-1005">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+        </children>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+South Security Room
+The bathroom is to the north and there's a security checkpoint to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1008"></child>
+        </children>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Freedom
+You're free! Now you don't have to sleep next to your stinky cellmate.
+
+
+
+    *** Yay! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
 </Skein>
