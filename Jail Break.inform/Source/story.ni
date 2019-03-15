@@ -40,19 +40,67 @@ Security Checkpoint 2 is a room.
 It is south of east security room and east of cafeteria.
 The description is "There's a security room to the north and the cafeteria to the west."
 
-Freedom is a room.
+[Freedom is a room.
 It is south of security checkpoint 2 and east of security checkpoint 1.
 The description is "You're free! Now you don't have to sleep next to your stinky cellmate."
 
 An every turn rule:
 	if player is in freedom:
-		end the story saying "Yay!".
+		end the story saying "Yay!".]
 
 Joe is a man in cell room 2.
 The description of Joe is "..."
 
-Security Guard 1 is a man in the south security room.
-The description of security guard 1 is "..."
+A security guard is a man in the east security room.
+The description of security guard is "..."
+Understand "guard" as security guard.
 
-Security Guard 2 is a man in the east security room.
-The description of security guard 2 is "..."
+Table of security guard's movement
+destination
+Security Checkpoint 2
+Cafeteria
+Security Checkpoint 1
+South Security Room
+Prison Bathroom
+Cell Room 1
+Cell Room 2
+East Security Room
+Security Checkpoint 2
+Cafeteria
+Security Checkpoint 1
+South Security Room
+Prison Bathroom
+Cell Room 1
+Cell Room 2
+East Security Room
+Security Checkpoint 2
+Cafeteria
+Security Checkpoint 1
+South Security Room
+Prison Bathroom
+Cell Room 1
+Cell Room 2
+East Security Room
+
+
+Every turn when security guard is active:
+	repeat through the Table of security guard's movement:
+		let last space be the location of security guard;
+		[if security guard can be seen by the player, ]
+		say "Security guard heads to [the destination entry].";
+		move security guard to destination entry;
+		[if security guard can be seen by the player, say "Security guard arrives from [the destination entry].";]
+		blank out the whole row;
+		break.
+
+Security guard can be active or passive. He is active.
+
+
+[An every turn rule:
+	if player is in an adjacent room to the security guard:
+		say "..."]
+
+
+
+
+

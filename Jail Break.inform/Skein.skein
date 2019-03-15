@@ -11,7 +11,7 @@ You beg to the guard to let you free. "If you can't do the time, don't do the cr
 
 Jail Break
 An Interactive Fiction by tendo19
-Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Cell Room 1
 There's another cell room to the east and the bathroom is to the south.
@@ -19,8 +19,206 @@ There's another cell room to the east and the bathroom is to the south.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1009"></child>
+            <child nodeId="node-1229"></child>
             <child nodeId="node-1003"></child>
+            <child nodeId="node-1238"></child>
         </children>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1241"></child>
+        </children>
+    </item>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to South Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1242"></child>
+        </children>
+    </item>
+    <item nodeId="node-1242">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Prison Bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1243"></child>
+        </children>
+    </item>
+    <item nodeId="node-1243">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1250"></child>
+        </children>
+    </item>
+    <item nodeId="node-1250">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1251"></child>
+        </children>
+    </item>
+    <item nodeId="node-1251">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to East Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1252"></child>
+        </children>
+    </item>
+    <item nodeId="node-1252">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+        </children>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1266"></child>
+        </children>
+    </item>
+    <item nodeId="node-1266">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to South Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1267"></child>
+        </children>
+    </item>
+    <item nodeId="node-1267">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Prison Bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1270"></child>
+        </children>
+    </item>
+    <item nodeId="node-1270">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to East Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1271"></child>
+        </children>
+    </item>
+    <item nodeId="node-1271">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1272"></child>
+        </children>
+    </item>
+    <item nodeId="node-1272">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1003">
         <command xml:space="preserve">s</command>
@@ -31,7 +229,606 @@ There's a cell room to the north and the cafeteria is to the east.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1004"></child>
+            <child nodeId="node-1149"></child>
+            <child nodeId="node-1016"></child>
         </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+South Security Room
+The bathroom is to the north and there's a security checkpoint to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+            <child nodeId="node-1167"></child>
+        </children>
+    </item>
+    <item nodeId="node-1167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+Security guard arrives from security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1168"></child>
+            <child nodeId="node-1220"></child>
+        </children>
+    </item>
+    <item nodeId="node-1220">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1221"></child>
+        </children>
+    </item>
+    <item nodeId="node-1221">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1222"></child>
+        </children>
+    </item>
+    <item nodeId="node-1222">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see Joe here.
+
+Security guard arrives from Cell Room 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1225"></child>
+        </children>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see Joe here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1227"></child>
+        </children>
+    </item>
+    <item nodeId="node-1227">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1228"></child>
+        </children>
+    </item>
+    <item nodeId="node-1228">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+You can see a security guard here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1168">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Freedom
+You're free! Now you don't have to sleep next to your stinky cellmate.
+
+
+
+    *** Yay! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1169"></child>
+        </children>
+    </item>
+    <item nodeId="node-1169">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+You beg to the guard to let you free. "If you can't do the time, don't do the crime," he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them.
+
+Jail Break
+An Interactive Fiction by tendo19
+Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1170"></child>
+        </children>
+    </item>
+    <item nodeId="node-1170">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1171"></child>
+        </children>
+    </item>
+    <item nodeId="node-1171">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+Security guard arrives from Cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1172"></child>
+        </children>
+    </item>
+    <item nodeId="node-1172">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1173"></child>
+        </children>
+    </item>
+    <item nodeId="node-1173">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Freedom
+You're free! Now you don't have to sleep next to your stinky cellmate.
+
+
+
+    *** Yay! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+            <child nodeId="node-1134"></child>
+        </children>
+    </item>
+    <item nodeId="node-1134">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1135"></child>
+        </children>
+    </item>
+    <item nodeId="node-1135">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1136"></child>
+        </children>
+    </item>
+    <item nodeId="node-1136">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1137"></child>
+        </children>
+    </item>
+    <item nodeId="node-1137">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see Joe here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1138"></child>
+        </children>
+    </item>
+    <item nodeId="node-1138">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+You can see Security Guard here.
+
+Sam heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1139"></child>
+        </children>
+    </item>
+    <item nodeId="node-1139">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+You can see Security Guard here.
+
+Sam heads to East Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1140"></child>
+        </children>
+    </item>
+    <item nodeId="node-1140">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1141"></child>
+        </children>
+    </item>
+    <item nodeId="node-1141">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1142"></child>
+        </children>
+    </item>
+    <item nodeId="node-1142">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+South Security Room
+The bathroom is to the north and there's a security checkpoint to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1143"></child>
+        </children>
+    </item>
+    <item nodeId="node-1143">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Freedom
+You're free! Now you don't have to sleep next to your stinky cellmate.
+
+
+
+    *** Yay! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">c</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">x</command>
+        <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1149">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1150"></child>
+        </children>
+    </item>
+    <item nodeId="node-1150">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">
+
+
+You beg to the guard to let you free. "If you can't do the time, don't do the crime," he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them.
+
+Jail Break
+An Interactive Fiction by tendo19
+Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1151"></child>
+        </children>
+    </item>
+    <item nodeId="node-1151">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1152"></child>
+        </children>
+    </item>
+    <item nodeId="node-1152">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+South Security Room
+The bathroom is to the north and there's a security checkpoint to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1153"></child>
+        </children>
+    </item>
+    <item nodeId="node-1153">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1154"></child>
+        </children>
+    </item>
+    <item nodeId="node-1154">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1155"></child>
+        </children>
+    </item>
+    <item nodeId="node-1155">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+        </children>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+        </children>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1158"></child>
+        </children>
+    </item>
+    <item nodeId="node-1158">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+You can see Security Guard here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1004">
         <command xml:space="preserve">n</command>
@@ -84,11 +881,209 @@ There's a security room to the west and the cafeteria to the north.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-1229">
+        <command xml:space="preserve">rules on</command>
+        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1230"></child>
+        </children>
+    </item>
+    <item nodeId="node-1230">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "move player and vehicle rule" applies.]
+[Rule "move floating objects rule" applies.]
+[Rule "check light in new location rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "describe room gone into rule" applies.]
+
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "room description heading rule" applies.]
+Prison Bathroom
+[Rule "room description body text rule" applies.]
+There's a cell room to the north and the cafeteria is to the east.
+
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "you-can-also-see rule" applies.]
+[Rule "check new arrival rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when security guard is active" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1231"></child>
+        </children>
+    </item>
+    <item nodeId="node-1231">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+[Rule "standard set going variables rule" applies.]
+[Rule "announce items from multiple object lists rule" applies.]
+[Rule "set pronouns from items from multiple object lists rule" applies.]
+[Rule "before stage rule" applies.]
+[Rule "instead stage rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "can't travel in what's not a vehicle rule" applies.]
+[Rule "can't go through undescribed doors rule" applies.]
+[Rule "can't go through closed doors rule" applies.]
+[Rule "determine map connection rule" applies.]
+[Rule "can't go that way rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "move player and vehicle rule" applies.]
+[Rule "move floating objects rule" applies.]
+[Rule "check light in new location rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "describe room gone into rule" applies.]
+
+[Rule "determine visibility ceiling rule" applies.]
+[Rule "investigate player's awareness before action rule" applies.]
+[Rule "player aware of his own actions rule" applies.]
+[Rule "check stage rule" applies.]
+[Rule "carry out stage rule" applies.]
+[Rule "declare everything unmentioned rule" applies.]
+[Rule "room description heading rule" applies.]
+South Security Room
+[Rule "room description body text rule" applies.]
+The bathroom is to the north and there's a security checkpoint to the east.
+
+[Rule "room description paragraphs about objects rule" applies.]
+[Rule "initialise locale description rule" applies.]
+[Rule "find notable locale objects rule" applies.]
+[Rule "standard notable locale objects rule" applies.]
+[Rule "interesting locale paragraphs rule" applies.]
+[Rule "don't mention player's supporter in room descriptions rule" applies.]
+[Rule "don't mention scenery in room descriptions rule" applies.]
+[Rule "don't mention undescribed items in room descriptions rule" applies.]
+[Rule "set pronouns from items in room descriptions rule" applies.]
+[Rule "offer items to writing a paragraph about rule" applies.]
+[Rule "use initial appearance in room descriptions rule" applies.]
+[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
+[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
+[Rule "you-can-also-see rule" applies.]
+[Rule "check new arrival rule" applies.]
+[Rule "after stage rule" applies.]
+[Rule "investigate player's awareness after action rule" applies.]
+[Rule "report stage rule" applies.]
+[Rule "other people looking rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "last specific action-processing rule" applies.]
+[Rule "A first turn sequence rule" applies.]
+[Rule "every turn stage rule" applies.]
+[Rule "Every turn when security guard is active" applies.]
+[Rule "A last turn sequence rule" applies.]
+[Rule "notify score changes rule" applies.]
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1232"></child>
+        </children>
+    </item>
+    <item nodeId="node-1232">
+        <command xml:space="preserve"> rules off</command>
+        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
+Rules tracing now switched off. Type "rules" to switch it on again.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1235"></child>
+        </children>
+    </item>
+    <item nodeId="node-1235">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1236"></child>
+        </children>
+    </item>
+    <item nodeId="node-1236">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1237"></child>
+        </children>
+    </item>
+    <item nodeId="node-1237">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1009">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
 There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see Joe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -115,7 +1110,448 @@ There's a security room to the north and the cafeteria to the west.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1012"></child>
+            <child nodeId="node-1177"></child>
         </children>
+    </item>
+    <item nodeId="node-1177">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1178"></child>
+        </children>
+    </item>
+    <item nodeId="node-1178">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+security checkpoint 1
+There's a security room to the west and the cafeteria to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+        </children>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+South Security Room
+The bathroom is to the north and there's a security checkpoint to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1182"></child>
+        </children>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Prison Bathroom
+There's a cell room to the north and the cafeteria is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1183"></child>
+        </children>
+    </item>
+    <item nodeId="node-1183">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1184"></child>
+        </children>
+    </item>
+    <item nodeId="node-1184">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1185"></child>
+        </children>
+    </item>
+    <item nodeId="node-1185">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1186"></child>
+        </children>
+    </item>
+    <item nodeId="node-1186">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1187"></child>
+        </children>
+    </item>
+    <item nodeId="node-1187">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1188"></child>
+        </children>
+    </item>
+    <item nodeId="node-1188">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1189"></child>
+        </children>
+    </item>
+    <item nodeId="node-1189">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1190"></child>
+        </children>
+    </item>
+    <item nodeId="node-1190">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1191"></child>
+        </children>
+    </item>
+    <item nodeId="node-1191">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1192"></child>
+        </children>
+    </item>
+    <item nodeId="node-1192">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1193"></child>
+        </children>
+    </item>
+    <item nodeId="node-1193">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1194"></child>
+        </children>
+    </item>
+    <item nodeId="node-1194">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1195"></child>
+        </children>
+    </item>
+    <item nodeId="node-1195">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1196"></child>
+        </children>
+    </item>
+    <item nodeId="node-1196">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1197"></child>
+        </children>
+    </item>
+    <item nodeId="node-1197">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1198"></child>
+        </children>
+    </item>
+    <item nodeId="node-1198">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1199"></child>
+        </children>
+    </item>
+    <item nodeId="node-1199">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1200"></child>
+        </children>
+    </item>
+    <item nodeId="node-1200">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1201"></child>
+        </children>
+    </item>
+    <item nodeId="node-1201">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1202"></child>
+        </children>
+    </item>
+    <item nodeId="node-1202">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1203"></child>
+        </children>
+    </item>
+    <item nodeId="node-1203">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1204"></child>
+        </children>
+    </item>
+    <item nodeId="node-1204">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1205"></child>
+        </children>
+    </item>
+    <item nodeId="node-1205">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1206"></child>
+        </children>
+    </item>
+    <item nodeId="node-1206">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1207"></child>
+        </children>
+    </item>
+    <item nodeId="node-1207">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1208"></child>
+        </children>
+    </item>
+    <item nodeId="node-1208">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1209"></child>
+        </children>
+    </item>
+    <item nodeId="node-1209">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1210"></child>
+        </children>
+    </item>
+    <item nodeId="node-1210">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1211"></child>
+        </children>
+    </item>
+    <item nodeId="node-1211">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1212"></child>
+        </children>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cafeteria
+There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+        </children>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1214"></child>
+        </children>
+    </item>
+    <item nodeId="node-1214">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+You can see a security guard here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1215"></child>
+        </children>
+    </item>
+    <item nodeId="node-1215">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+security checkpoint 2
+There's a security room to the north and the cafeteria to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1216"></child>
+        </children>
+    </item>
+    <item nodeId="node-1216">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+East Security Room
+There's cell room to the west and a security checkpoint to the south.
+
+You can see a security guard here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1012">
         <command xml:space="preserve">s</command>
