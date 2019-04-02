@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /Volumes/Inform/Inform.app/Contents/MacOS/ni -internal /Volumes/Inform/Inform.app/Contents/Resources/Internal -external /Users/tendo19/Library/Inform -project /Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform -format=ulx
-Found language bundle 'English' (built in)
-Found language bundle 'French' (built in)
+Inform called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/tendo19/Library/Inform -project /Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform -format=ulx
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
-Found language bundle 'Spanish' (built in)
+Found language bundle 'English' (built in)
+Found language bundle 'French' (built in)
 Found language bundle 'Swedish' (built in)
-Reading language definition from </Volumes/Inform/Inform.app/Contents/Resources/Internal/Languages/English/Syntax.preform>
+Found language bundle 'Spanish' (built in)
+Reading language definition from </Applications/Inform.app/Contents/Resources/Internal/Languages/English/Syntax.preform>
 720 declarations read (14183 words)
 
 
@@ -14,7 +14,7 @@ Reading language definition from </Volumes/Inform/Inform.app/Contents/Resources/
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 532 words long.
+I've now read your source text, which is 836 words long.
 
 
 -----------------------------------------------------
@@ -174,8 +174,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 101 files written as streams.
-CPU time: 249 centiseconds
+Total of 102 files written as streams.
+CPU time: 251 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -1,6 +1,6 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Build/StatusCblorb.html"
 
 
 ! Identification
@@ -13,8 +13,8 @@ release to "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.materials/Rele
 storyfile leafname "Jail Break.gblorb"
 storyfile "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Build/output.ulx" include
 ifiction "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Metadata.iFiction" include
-cover "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
-picture 1 "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
 ! Placeholder variables
 

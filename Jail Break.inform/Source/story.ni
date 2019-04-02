@@ -2,42 +2,55 @@
 
 When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them."
 
-[The description of the player is "You're currently serving a life sentence for farting in the president's face. You feel that i."]
+
+The description of the player is "You're currently serving a life sentence."
+The player is in Cell Room 1.
 
 [Your Cell Room is a room.
 The description is "The bars are made of thick steel and there's no way you'd fit through the bars."]
 
+The metal door is north of prison bathroom.
+The metal door is a door.
+it is lockable and locked.
+The key card unlocks the metal door.
+The description of the metal door is "...".
+
+The rusted metal door is north of cafeteria.
+The rusted metal door is a door.
+It is lockable and locked.
+The key card unlocks the rusted metal door.
+The description of the rusted metal door is "..."
 
 Cell Room 1 is a room.
-It is west of Cell Room 2 and north of Prison Bathroom.
+It is west of Cell Room 2 and north of the metal door.
 The description is "There's another cell room to the east and the bathroom is to the south."
 
 Cell Room 2 is a room.
-It is east of Cell Room 1 and north of Cafeteria and west of East Security Room.
+It is east of Cell Room 1 and north of the rusted metal door and west of Security Room.
 The description is "There's another cell room to the west and the security room is to east. The cafeteria is to the south."
 
-South Security Room is a room.
+Storage Room is a room.
 It is south of prison bathroom and west of security checkpoint 1.
 The description is "The bathroom is to the north and there's a security checkpoint to the east."
 
-East Security Room is a room.
+Security Room is a room.
 It is east of Cell Room 2 and north of security checkpoint 2.
 The description is "There's cell room to the west and a security checkpoint to the south."
 
 Prison Bathroom is a room.
-It is south of Cell Room 1 and west of cafeteria and north of south security room. 
-The description is "There's a cell room to the north and the cafeteria is to the east."
+It is south of metal door and west of cafeteria and north of storage room. 
+The description is "There's a metal door to the north, the cafeteria is to the east, and the storage room is to the south."
 
 Cafeteria is a room.
-It is south of cell room 2 and east of prison bathroom and north of security checkpoint 1 and west of security checkpoint 2. 
+It is south of the rusted metal door and east of prison bathroom and north of security checkpoint 1 and west of security checkpoint 2. 
 The description is "There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south."
 
 Security Checkpoint 1 is a room.
-It is south of cafeteria and east of south security room. 
-The description is "There's a security room to the west and the cafeteria to the north."
+It is south of cafeteria and east of storage room. 
+The description is "There's a storage room to the west and the cafeteria to the north."
 
 Security Checkpoint 2 is a room.
-It is south of east security room and east of cafeteria.
+It is south of security room and east of cafeteria.
 The description is "There's a security room to the north and the cafeteria to the west."
 
 [Freedom is a room.
@@ -48,10 +61,18 @@ An every turn rule:
 	if player is in freedom:
 		end the story saying "Yay!".]
 
-Joe is a man in cell room 2.
-The description of Joe is "..."
+ Joe is a man in cell room 2.
+The description of Joe is "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you."
 
-A security guard is a man in the east security room.
+Instead of talking to Joe: 
+	say "'How can I escape this place?' you ask.[paragraph break]'This prison is quite complex. You need to reach one of the security checkpoints without being caught,' he replies. [paragraph break] You say, 'Is there any way to sneak past the guards?'[paragraph break]'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'"
+
+Understand "talk to [someone]" as talking to. Understand "talk to [something]" as talking to. Talking to is an action applying to one visible thing.
+
+Understand "talk to Joe" or "converse with Joe" as talking to.
+
+
+A security guard is a man in the security room.
 The description of security guard is "..."
 Understand "guard" as security guard.
 
@@ -60,28 +81,35 @@ destination
 Security Checkpoint 2
 Cafeteria
 Security Checkpoint 1
-South Security Room
+Storage Room
 Prison Bathroom
 Cell Room 1
 Cell Room 2
-East Security Room
+Security Room
 Security Checkpoint 2
 Cafeteria
 Security Checkpoint 1
-South Security Room
+Storage Room
 Prison Bathroom
 Cell Room 1
 Cell Room 2
-East Security Room
+Security Room
 Security Checkpoint 2
 Cafeteria
 Security Checkpoint 1
-South Security Room
+Storage Room
 Prison Bathroom
 Cell Room 1
 Cell Room 2
-East Security Room
-
+Security Room
+Security Checkpoint 2
+Cafeteria
+Security Checkpoint 1
+Storage Room
+Prison Bathroom
+Cell Room 1
+Cell Room 2
+Security Room
 
 Every turn when security guard is active:
 	repeat through the Table of security guard's movement:
@@ -100,6 +128,18 @@ Security guard can be active or passive. He is active.
 	if player is in an adjacent room to the security guard:
 		say "..."]
 
+
+Key Card is a thing.
+It is in the east security room.
+The description of key card is "This will probably grant you access to the other rooms."
+
+Security Uniform is a thing.
+It is wearable.
+It is in the storage room.
+
+Security camera monitor is a thing.
+It is in the east security room. 
+The description is "..."
 
 
 
