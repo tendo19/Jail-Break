@@ -1,33 +1,26 @@
 "Jail Break" by tendo19
 
-When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them."
+When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell."
 
 
 The description of the player is "You're currently serving a life sentence."
-The player is in Cell Room 1.
+The player is in your cell.
 
-[Your Cell Room is a room.
-The description is "The bars are made of thick steel and there's no way you'd fit through the bars."]
+Your Cell is a room. 
+It is north of Cell Room 1.
+The description is "You're in a small cramped space with a think mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. "
 
-The metal door is north of prison bathroom.
-The metal door is a door.
-it is lockable and locked.
-The key card unlocks the metal door.
-The description of the metal door is "...".
-
-The rusted metal door is north of cafeteria.
-The rusted metal door is a door.
-It is lockable and locked.
-The key card unlocks the rusted metal door.
-The description of the rusted metal door is "..."
+Joe's Cell is a room.
+It is north of Cell Room 2.
+The description is "..."
 
 Cell Room 1 is a room.
 It is west of Cell Room 2 and north of the metal door.
-The description is "There's another cell room to the east and the bathroom is to the south."
+The description is "The cells are on the northern side of the room.There's another cell room to the east and the bathroom is to the south."
 
 Cell Room 2 is a room.
 It is east of Cell Room 1 and north of the rusted metal door and west of Security Room.
-The description is "There's another cell room to the west and the security room is to east. The cafeteria is to the south."
+The description is "The cells are on the northern side of the room. There's another cell room to the west and the security room is to east. The cafeteria is to the south."
 
 Storage Room is a room.
 It is south of prison bathroom and west of security checkpoint 1.
@@ -114,8 +107,7 @@ Security Room
 Every turn when security guard is active:
 	repeat through the Table of security guard's movement:
 		let last space be the location of security guard;
-		[if security guard can be seen by the player, ]
-		say "Security guard heads to [the destination entry].";
+		say "Security is in [the destination entry]. Security guard is heading ";
 		move security guard to destination entry;
 		[if security guard can be seen by the player, say "Security guard arrives from [the destination entry].";]
 		blank out the whole row;
@@ -123,15 +115,21 @@ Every turn when security guard is active:
 
 Security guard can be active or passive. He is active.
 
+Every turn rule:
+	If player is not in Your Cell:
+		If security guard is visible:
+			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
+	If player is not in Joe's Cell:
+		If security guard is visible:
+			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
+	If player is in Your Cell:
+		If security guard is in cell room 1:
+			say "The security guard continues walking to the next room.";
+	If player is in Joe's Cell:
+		If security guard is in cell room 2:
+			say "The security guard continues walking to the next room."
 
-[An every turn rule:
-	if player is in an adjacent room to the security guard:
-		say "..."]
 
-
-Key Card is a thing.
-It is in the east security room.
-The description of key card is "This will probably grant you access to the other rooms."
 
 Security Uniform is a thing.
 It is wearable.
@@ -141,6 +139,76 @@ Security camera monitor is a thing.
 It is in the east security room. 
 The description is "..."
 
+The metal door is north of prison bathroom.
+The metal door is a door.
+it is lockable and locked.
 
+The rusted metal door is north of cafeteria.
+The rusted metal door is a door.
+It is lockable and locked.
+
+The description of the metal door is "Enter six-digit code to unlock."
+	After examining the metal door:
+		now the command prompt is "Please enter the six-digit locker pin code. >";
+		continue the action.
+   
+After reading a command when the command prompt is "Please enter the six-digit pin code. >":
+	increment the turn count;
+	if the player's command matches "112098": 
+		now the metal door is unlocked;
+		say "**BUZZ**  Access granted";
+		now the command prompt is ">";
+	otherwise:
+		say "Incorrect pin, door remains locked.";
+		now the command prompt is "Would you like to try again? (Yes or No) >";
+	reject the player's command.   
+   
+After reading a command when the command prompt is "Would you like to try again? (Yes or No) >":
+	if the player's command matches "yes" or the player's command matches "y": 
+		now the command prompt is "Please enter the six-digit locker pin code. >";
+		say line break;
+		say run paragraph on;
+		reject the player's command;
+	if the player's command matches "no" or the player's command matches "n": 
+		now the command prompt is ">";
+		say line break;
+		say run paragraph on;
+		reject the player's command;
+	otherwise:
+		say line break;
+		say run paragraph on;
+		reject the player's command.
+
+The description of the rusted metal door is "Enter six-digit code to unlock."
+	After examining the rusted metal door:
+		now the command prompt is "Please enter the six-digit locker pin code. >";
+		continue the action.
+
+After reading a command when the command prompt is "Please enter the six-digit pin code. >":
+	increment the turn count;
+	if the player's command matches "112098": 
+		now the rusted metal door is unlocked;
+		say "**BUZZ**  Access granted";
+		now the command prompt is ">";
+	otherwise:
+		say "Incorrect pin, door remains locked.";
+		now the command prompt is "Would you like to try again? (Yes or No) >";
+	reject the player's command.   
+   
+After reading a command when the command prompt is "Would you like to try again? (Yes or No) >":
+	if the player's command matches "yes" or the player's command matches "y": 
+		now the command prompt is "Please enter the six-digit locker pin code. >";
+		say line break;
+		say run paragraph on;
+		reject the player's command;
+	if the player's command matches "no" or the player's command matches "n": 
+		now the command prompt is ">";
+		say line break;
+		say run paragraph on;
+		reject the player's command;
+	otherwise:
+		say line break;
+		say run paragraph on;
+		reject the player's command.
 
 

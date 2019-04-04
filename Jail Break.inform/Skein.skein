@@ -1,55 +1,53 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1002">
+<Skein rootNode="node-1105">
     <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
-    <item nodeId="node-1002">
+    <item nodeId="node-1105">
         <command xml:space="preserve">Jail Break</command>
         <result xml:space="preserve">
 
 
-You beg to the guard to let you free. "If you can't do the time, don't do the crime," he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by any of the guards by never being in the same room as them.
+You beg to the guard to let you free. "If you can't do the time, don't do the crime," he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell.
 
 Jail Break
 An Interactive Fiction by tendo19
-Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190403 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
-Cell Room 1
-There's another cell room to the east and the bathroom is to the south.
+your cell
+You're in a small cramped space with a think mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. 
 
-You can see a metal door here.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1229"></child>
+            <child nodeId="node-1220"></child>
+            <child nodeId="node-1149"></child>
+            <child nodeId="node-1144"></child>
+            <child nodeId="node-1106"></child>
+        </children>
+    </item>
+    <item nodeId="node-1106">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1107"></child>
+        </children>
+    </item>
+    <item nodeId="node-1107">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1108"></child>
-            <child nodeId="node-1099"></child>
-            <child nodeId="node-1041"></child>
-            <child nodeId="node-1171"></child>
-            <child nodeId="node-1003"></child>
         </children>
     </item>
-    <item nodeId="node-1003">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Time passes.
-
-Security guard heads to security checkpoint 2.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1004"></child>
-        </children>
-    </item>
-    <item nodeId="node-1004">
-        <command xml:space="preserve">z</command>
-        <result xml:space="preserve">Time passes.
-
-Security guard heads to Cafeteria.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1005"></child>
-        </children>
-    </item>
-    <item nodeId="node-1005">
+    <item nodeId="node-1108">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -57,10 +55,10 @@ Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1006"></child>
+        <children><child nodeId="node-1109"></child>
         </children>
     </item>
-    <item nodeId="node-1006">
+    <item nodeId="node-1109">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -68,10 +66,10 @@ Security guard heads to South Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1007"></child>
+        <children><child nodeId="node-1110"></child>
         </children>
     </item>
-    <item nodeId="node-1007">
+    <item nodeId="node-1110">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -79,10 +77,10 @@ Security guard heads to Prison Bathroom.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1008"></child>
+        <children><child nodeId="node-1111"></child>
         </children>
     </item>
-    <item nodeId="node-1008">
+    <item nodeId="node-1111">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -90,10 +88,10 @@ Security guard heads to Cell Room 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1009"></child>
+        <children><child nodeId="node-1112"></child>
         </children>
     </item>
-    <item nodeId="node-1009">
+    <item nodeId="node-1112">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -101,10 +99,10 @@ Security guard heads to Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1010"></child>
+        <children><child nodeId="node-1113"></child>
         </children>
     </item>
-    <item nodeId="node-1010">
+    <item nodeId="node-1113">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -112,10 +110,10 @@ Security guard heads to East Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1011"></child>
+        <children><child nodeId="node-1114"></child>
         </children>
     </item>
-    <item nodeId="node-1011">
+    <item nodeId="node-1114">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -123,10 +121,10 @@ Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1012"></child>
+        <children><child nodeId="node-1115"></child>
         </children>
     </item>
-    <item nodeId="node-1012">
+    <item nodeId="node-1115">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -134,10 +132,10 @@ Security guard heads to Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1013"></child>
+        <children><child nodeId="node-1116"></child>
         </children>
     </item>
-    <item nodeId="node-1013">
+    <item nodeId="node-1116">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -145,10 +143,10 @@ Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1014"></child>
+        <children><child nodeId="node-1117"></child>
         </children>
     </item>
-    <item nodeId="node-1014">
+    <item nodeId="node-1117">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -156,10 +154,10 @@ Security guard heads to South Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1015"></child>
+        <children><child nodeId="node-1118"></child>
         </children>
     </item>
-    <item nodeId="node-1015">
+    <item nodeId="node-1118">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -167,10 +165,10 @@ Security guard heads to Prison Bathroom.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
+        <children><child nodeId="node-1119"></child>
         </children>
     </item>
-    <item nodeId="node-1016">
+    <item nodeId="node-1119">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -178,10 +176,10 @@ Security guard heads to Cell Room 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1017"></child>
+        <children><child nodeId="node-1120"></child>
         </children>
     </item>
-    <item nodeId="node-1017">
+    <item nodeId="node-1120">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -189,10 +187,10 @@ Security guard heads to Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1018"></child>
+        <children><child nodeId="node-1121"></child>
         </children>
     </item>
-    <item nodeId="node-1018">
+    <item nodeId="node-1121">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -200,10 +198,10 @@ Security guard heads to East Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1019"></child>
+        <children><child nodeId="node-1122"></child>
         </children>
     </item>
-    <item nodeId="node-1019">
+    <item nodeId="node-1122">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -211,10 +209,10 @@ Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1020"></child>
+        <children><child nodeId="node-1123"></child>
         </children>
     </item>
-    <item nodeId="node-1020">
+    <item nodeId="node-1123">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -222,10 +220,10 @@ Security guard heads to Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1021"></child>
+        <children><child nodeId="node-1124"></child>
         </children>
     </item>
-    <item nodeId="node-1021">
+    <item nodeId="node-1124">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -233,10 +231,10 @@ Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1022"></child>
+        <children><child nodeId="node-1125"></child>
         </children>
     </item>
-    <item nodeId="node-1022">
+    <item nodeId="node-1125">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -244,10 +242,10 @@ Security guard heads to South Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1023"></child>
+        <children><child nodeId="node-1126"></child>
         </children>
     </item>
-    <item nodeId="node-1023">
+    <item nodeId="node-1126">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -255,10 +253,10 @@ Security guard heads to Prison Bathroom.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1024"></child>
+        <children><child nodeId="node-1127"></child>
         </children>
     </item>
-    <item nodeId="node-1024">
+    <item nodeId="node-1127">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -266,10 +264,10 @@ Security guard heads to Cell Room 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1025"></child>
+        <children><child nodeId="node-1128"></child>
         </children>
     </item>
-    <item nodeId="node-1025">
+    <item nodeId="node-1128">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -277,10 +275,10 @@ Security guard heads to Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
+        <children><child nodeId="node-1129"></child>
         </children>
     </item>
-    <item nodeId="node-1026">
+    <item nodeId="node-1129">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
@@ -288,91 +286,91 @@ Security guard heads to East Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1027"></child>
+        <children><child nodeId="node-1130"></child>
         </children>
     </item>
-    <item nodeId="node-1027">
+    <item nodeId="node-1130">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1028"></child>
+        <children><child nodeId="node-1131"></child>
         </children>
     </item>
-    <item nodeId="node-1028">
+    <item nodeId="node-1131">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1029"></child>
+        <children><child nodeId="node-1132"></child>
         </children>
     </item>
-    <item nodeId="node-1029">
+    <item nodeId="node-1132">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1030"></child>
+        <children><child nodeId="node-1133"></child>
         </children>
     </item>
-    <item nodeId="node-1030">
+    <item nodeId="node-1133">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1031"></child>
+        <children><child nodeId="node-1134"></child>
         </children>
     </item>
-    <item nodeId="node-1031">
+    <item nodeId="node-1134">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1032"></child>
+        <children><child nodeId="node-1135"></child>
         </children>
     </item>
-    <item nodeId="node-1032">
+    <item nodeId="node-1135">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1033"></child>
+        <children><child nodeId="node-1136"></child>
         </children>
     </item>
-    <item nodeId="node-1033">
+    <item nodeId="node-1136">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1034"></child>
+        <children><child nodeId="node-1137"></child>
         </children>
     </item>
-    <item nodeId="node-1034">
+    <item nodeId="node-1137">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1035"></child>
+        <children><child nodeId="node-1138"></child>
         </children>
     </item>
-    <item nodeId="node-1035">
+    <item nodeId="node-1138">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1036"></child>
+        <children><child nodeId="node-1139"></child>
         </children>
     </item>
-    <item nodeId="node-1036">
+    <item nodeId="node-1139">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -380,10 +378,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1037"></child>
+        <children><child nodeId="node-1140"></child>
         </children>
     </item>
-    <item nodeId="node-1037">
+    <item nodeId="node-1140">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cell Room 1
@@ -391,10 +389,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1038"></child>
+        <children><child nodeId="node-1141"></child>
         </children>
     </item>
-    <item nodeId="node-1038">
+    <item nodeId="node-1141">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -404,10 +402,10 @@ You can see Joe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1039"></child>
+        <children><child nodeId="node-1142"></child>
         </children>
     </item>
-    <item nodeId="node-1039">
+    <item nodeId="node-1142">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 East Security Room
@@ -417,10 +415,10 @@ You can see a security guard here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1040"></child>
+        <children><child nodeId="node-1143"></child>
         </children>
     </item>
-    <item nodeId="node-1040">
+    <item nodeId="node-1143">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -429,7 +427,7 @@ There's a security room to the north and the cafeteria to the west.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1171">
+    <item nodeId="node-1144">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You can't go that way.
 
@@ -437,10 +435,10 @@ Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1172"></child>
+        <children><child nodeId="node-1145"></child>
         </children>
     </item>
-    <item nodeId="node-1172">
+    <item nodeId="node-1145">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -452,10 +450,10 @@ Security guard heads to Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1173"></child>
+        <children><child nodeId="node-1146"></child>
         </children>
     </item>
-    <item nodeId="node-1173">
+    <item nodeId="node-1146">
         <command xml:space="preserve">talk to joe</command>
         <result xml:space="preserve">You must supply a noun.
 
@@ -463,10 +461,10 @@ Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1174"></child>
+        <children><child nodeId="node-1147"></child>
         </children>
     </item>
-    <item nodeId="node-1174">
+    <item nodeId="node-1147">
         <command xml:space="preserve">talk to Joe</command>
         <result xml:space="preserve">You must supply a noun.
 
@@ -474,10 +472,10 @@ Security guard heads to South Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1175"></child>
+        <children><child nodeId="node-1148"></child>
         </children>
     </item>
-    <item nodeId="node-1175">
+    <item nodeId="node-1148">
         <command xml:space="preserve">talk to the joe</command>
         <result xml:space="preserve">"How can I escape this place?" you ask.
 
@@ -492,52 +490,117 @@ Security guard heads to Prison Bathroom.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1041">
+    <item nodeId="node-1149">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
-Prison Bathroom
-There's a cell room to the north and the cafeteria is to the east.
+Cell Room 1
+The cells are on the northern side of the room.There's another cell room to the east and the bathroom is to the south.
 
-Security guard heads to security checkpoint 2.
+You can see a metal door here.
+
+Security guard is in Security Room. Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1155"></child>
-            <child nodeId="node-1094"></child>
-            <child nodeId="node-1084"></child>
-            <child nodeId="node-1042"></child>
+        <children><child nodeId="node-1219"></child>
+            <child nodeId="node-1214"></child>
+            <child nodeId="node-1204"></child>
+            <child nodeId="node-1150"></child>
+            <child nodeId="node-1306"></child>
         </children>
     </item>
-    <item nodeId="node-1042">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-South Security Room
-The bathroom is to the north and there's a security checkpoint to the east.
+    <item nodeId="node-1306">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
 
-Security guard heads to Cafeteria.
+Security guard is in security checkpoint 2. Security guard heads to cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1059"></child>
-            <child nodeId="node-1043"></child>
+        <children><child nodeId="node-1307"></child>
         </children>
     </item>
-    <item nodeId="node-1043">
+    <item nodeId="node-1307">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard is in cafeteria. Security guard heads to security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1308"></child>
+        </children>
+    </item>
+    <item nodeId="node-1308">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard is in security checkpoint 1. Security guard heads to Storage Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1309"></child>
+        </children>
+    </item>
+    <item nodeId="node-1309">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard is in Storage Room. Security guard heads to prison bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1310"></child>
+        </children>
+    </item>
+    <item nodeId="node-1310">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard is in prison bathroom. Security guard heads to Cell Room 1.
+
+
+
+    *** The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1150">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">(first opening the metal door)
+It seems to be locked.
+
+Security guard heads to cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+            <child nodeId="node-1151"></child>
+        </children>
+    </item>
+    <item nodeId="node-1151">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
-security checkpoint 1
-There's a security room to the west and the cafeteria to the north.
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see a rusted metal door and Joe here.
 
 Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1053"></child>
-            <child nodeId="node-1044"></child>
-            <child nodeId="node-1159"></child>
+        <children><child nodeId="node-1173"></child>
+            <child nodeId="node-1164"></child>
+            <child nodeId="node-1279"></child>
+            <child nodeId="node-1152"></child>
         </children>
     </item>
-    <item nodeId="node-1159">
+    <item nodeId="node-1152">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">(the security guard)
 ...
@@ -546,10 +609,10 @@ Security guard heads to South Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1160"></child>
+        <children><child nodeId="node-1153"></child>
         </children>
     </item>
-    <item nodeId="node-1160">
+    <item nodeId="node-1153">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cafeteria
@@ -559,10 +622,10 @@ Security guard heads to Prison Bathroom.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1161"></child>
+        <children><child nodeId="node-1154"></child>
         </children>
     </item>
-    <item nodeId="node-1161">
+    <item nodeId="node-1154">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -574,10 +637,10 @@ Security guard heads to Cell Room 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1162"></child>
+        <children><child nodeId="node-1155"></child>
         </children>
     </item>
-    <item nodeId="node-1162">
+    <item nodeId="node-1155">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 East Security Room
@@ -587,10 +650,10 @@ Security guard heads to Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1163"></child>
+        <children><child nodeId="node-1156"></child>
         </children>
     </item>
-    <item nodeId="node-1163">
+    <item nodeId="node-1156">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -602,10 +665,10 @@ Security guard heads to East Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1164"></child>
+        <children><child nodeId="node-1157"></child>
         </children>
     </item>
-    <item nodeId="node-1164">
+    <item nodeId="node-1157">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Cafeteria
@@ -615,37 +678,37 @@ Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1165"></child>
+        <children><child nodeId="node-1158"></child>
         </children>
     </item>
-    <item nodeId="node-1165">
+    <item nodeId="node-1158">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">What do you want to examine?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1166"></child>
+        <children><child nodeId="node-1159"></child>
         </children>
     </item>
-    <item nodeId="node-1166">
+    <item nodeId="node-1159">
         <command xml:space="preserve">room</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1167"></child>
+        <children><child nodeId="node-1160"></child>
         </children>
     </item>
-    <item nodeId="node-1167">
+    <item nodeId="node-1160">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">What do you want to examine?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1168"></child>
+        <children><child nodeId="node-1161"></child>
         </children>
     </item>
-    <item nodeId="node-1168">
+    <item nodeId="node-1161">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">You see nothing unexpected in that direction.
 
@@ -653,10 +716,10 @@ Security guard heads to Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1169"></child>
+        <children><child nodeId="node-1162"></child>
         </children>
     </item>
-    <item nodeId="node-1169">
+    <item nodeId="node-1162">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -666,10 +729,10 @@ Security guard heads to security checkpoint 1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1170"></child>
+        <children><child nodeId="node-1163"></child>
         </children>
     </item>
-    <item nodeId="node-1170">
+    <item nodeId="node-1163">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">(the security guard)
 ...
@@ -679,7 +742,57 @@ Security guard heads to South Security Room.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1044">
+    <item nodeId="node-1279">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+You can see a metal door here.
+
+Security guard heads to Storage Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1280"></child>
+        </children>
+    </item>
+    <item nodeId="node-1280">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Cell Room 2
+There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see a rusted metal door and Joe here.
+
+Security guard heads to prison bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1281"></child>
+        </children>
+    </item>
+    <item nodeId="node-1281">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cell Room 1
+There's another cell room to the east and the bathroom is to the south.
+
+You can see a metal door here.
+
+Security guard heads to Cell Room 1.
+
+
+
+    *** The security guard sees you and chases. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1164">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cafeteria
@@ -687,10 +800,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1045"></child>
+        <children><child nodeId="node-1165"></child>
         </children>
     </item>
-    <item nodeId="node-1045">
+    <item nodeId="node-1165">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -698,10 +811,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1046"></child>
+        <children><child nodeId="node-1166"></child>
         </children>
     </item>
-    <item nodeId="node-1046">
+    <item nodeId="node-1166">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 East Security Room
@@ -709,10 +822,10 @@ There's cell room to the west and a security checkpoint to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1047"></child>
+        <children><child nodeId="node-1167"></child>
         </children>
     </item>
-    <item nodeId="node-1047">
+    <item nodeId="node-1167">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -724,10 +837,10 @@ Security guard arrives from Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1048"></child>
+        <children><child nodeId="node-1168"></child>
         </children>
     </item>
-    <item nodeId="node-1048">
+    <item nodeId="node-1168">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cell Room 1
@@ -735,10 +848,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1049"></child>
+        <children><child nodeId="node-1169"></child>
         </children>
     </item>
-    <item nodeId="node-1049">
+    <item nodeId="node-1169">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -748,10 +861,10 @@ You can see Joe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1050"></child>
+        <children><child nodeId="node-1170"></child>
         </children>
     </item>
-    <item nodeId="node-1050">
+    <item nodeId="node-1170">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Cafeteria
@@ -759,10 +872,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1051"></child>
+        <children><child nodeId="node-1171"></child>
         </children>
     </item>
-    <item nodeId="node-1051">
+    <item nodeId="node-1171">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -770,10 +883,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1052"></child>
+        <children><child nodeId="node-1172"></child>
         </children>
     </item>
-    <item nodeId="node-1052">
+    <item nodeId="node-1172">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 East Security Room
@@ -784,7 +897,7 @@ You can see a security guard here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1053">
+    <item nodeId="node-1173">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Freedom
@@ -799,10 +912,10 @@ You're free! Now you don't have to sleep next to your stinky cellmate.
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1054"></child>
+        <children><child nodeId="node-1174"></child>
         </children>
     </item>
-    <item nodeId="node-1054">
+    <item nodeId="node-1174">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">
 
@@ -818,10 +931,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1055"></child>
+        <children><child nodeId="node-1175"></child>
         </children>
     </item>
-    <item nodeId="node-1055">
+    <item nodeId="node-1175">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -829,10 +942,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1056"></child>
+        <children><child nodeId="node-1176"></child>
         </children>
     </item>
-    <item nodeId="node-1056">
+    <item nodeId="node-1176">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cafeteria
@@ -842,10 +955,10 @@ Security guard arrives from Cafeteria.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1057"></child>
+        <children><child nodeId="node-1177"></child>
         </children>
     </item>
-    <item nodeId="node-1057">
+    <item nodeId="node-1177">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -853,10 +966,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1058"></child>
+        <children><child nodeId="node-1178"></child>
         </children>
     </item>
-    <item nodeId="node-1058">
+    <item nodeId="node-1178">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Freedom
@@ -872,26 +985,26 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1059">
+    <item nodeId="node-1179">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1074"></child>
-            <child nodeId="node-1060"></child>
+        <children><child nodeId="node-1194"></child>
+            <child nodeId="node-1180"></child>
         </children>
     </item>
-    <item nodeId="node-1060">
+    <item nodeId="node-1180">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1061"></child>
+        <children><child nodeId="node-1181"></child>
         </children>
     </item>
-    <item nodeId="node-1061">
+    <item nodeId="node-1181">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -899,10 +1012,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1062"></child>
+        <children><child nodeId="node-1182"></child>
         </children>
     </item>
-    <item nodeId="node-1062">
+    <item nodeId="node-1182">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cell Room 1
@@ -910,10 +1023,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1063"></child>
+        <children><child nodeId="node-1183"></child>
         </children>
     </item>
-    <item nodeId="node-1063">
+    <item nodeId="node-1183">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -923,10 +1036,10 @@ You can see Joe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1064"></child>
+        <children><child nodeId="node-1184"></child>
         </children>
     </item>
-    <item nodeId="node-1064">
+    <item nodeId="node-1184">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 East Security Room
@@ -938,10 +1051,10 @@ Sam heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1065"></child>
+        <children><child nodeId="node-1185"></child>
         </children>
     </item>
-    <item nodeId="node-1065">
+    <item nodeId="node-1185">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -953,10 +1066,10 @@ Sam heads to East Security Room.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1066"></child>
+        <children><child nodeId="node-1186"></child>
         </children>
     </item>
-    <item nodeId="node-1066">
+    <item nodeId="node-1186">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -964,10 +1077,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1067"></child>
+        <children><child nodeId="node-1187"></child>
         </children>
     </item>
-    <item nodeId="node-1067">
+    <item nodeId="node-1187">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -975,10 +1088,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1068"></child>
+        <children><child nodeId="node-1188"></child>
         </children>
     </item>
-    <item nodeId="node-1068">
+    <item nodeId="node-1188">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 South Security Room
@@ -986,10 +1099,10 @@ The bathroom is to the north and there's a security checkpoint to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1069"></child>
+        <children><child nodeId="node-1189"></child>
         </children>
     </item>
-    <item nodeId="node-1069">
+    <item nodeId="node-1189">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -997,10 +1110,10 @@ There's a security room to the west and the cafeteria to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1070"></child>
+        <children><child nodeId="node-1190"></child>
         </children>
     </item>
-    <item nodeId="node-1070">
+    <item nodeId="node-1190">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Freedom
@@ -1015,30 +1128,30 @@ You're free! Now you don't have to sleep next to your stinky cellmate.
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1071"></child>
+        <children><child nodeId="node-1191"></child>
         </children>
     </item>
-    <item nodeId="node-1071">
+    <item nodeId="node-1191">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">Please give one of the answers above.
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1072"></child>
+        <children><child nodeId="node-1192"></child>
         </children>
     </item>
-    <item nodeId="node-1072">
+    <item nodeId="node-1192">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">Please give one of the answers above.
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1073"></child>
+        <children><child nodeId="node-1193"></child>
         </children>
     </item>
-    <item nodeId="node-1073">
+    <item nodeId="node-1193">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">Please give one of the answers above.
 
@@ -1046,34 +1159,34 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1074">
+    <item nodeId="node-1194">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1075"></child>
+        <children><child nodeId="node-1195"></child>
         </children>
     </item>
-    <item nodeId="node-1075">
+    <item nodeId="node-1195">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1076"></child>
+        <children><child nodeId="node-1196"></child>
         </children>
     </item>
-    <item nodeId="node-1076">
+    <item nodeId="node-1196">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1077"></child>
+        <children><child nodeId="node-1197"></child>
         </children>
     </item>
-    <item nodeId="node-1077">
+    <item nodeId="node-1197">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -1081,69 +1194,69 @@ There's a security room to the west and the cafeteria to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1078"></child>
+        <children><child nodeId="node-1198"></child>
         </children>
     </item>
-    <item nodeId="node-1078">
+    <item nodeId="node-1198">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1079"></child>
+        <children><child nodeId="node-1199"></child>
         </children>
     </item>
-    <item nodeId="node-1079">
+    <item nodeId="node-1199">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1080"></child>
+        <children><child nodeId="node-1200"></child>
         </children>
     </item>
-    <item nodeId="node-1080">
+    <item nodeId="node-1200">
         <command xml:space="preserve">c</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1081"></child>
+        <children><child nodeId="node-1201"></child>
         </children>
     </item>
-    <item nodeId="node-1081">
+    <item nodeId="node-1201">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1082"></child>
+        <children><child nodeId="node-1202"></child>
         </children>
     </item>
-    <item nodeId="node-1082">
+    <item nodeId="node-1202">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1083"></child>
+        <children><child nodeId="node-1203"></child>
         </children>
     </item>
-    <item nodeId="node-1083">
+    <item nodeId="node-1203">
         <command xml:space="preserve">x</command>
         <result xml:space="preserve">What do you want to examine?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1084">
+    <item nodeId="node-1204">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">Are you sure you want to restart? </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1085"></child>
+        <children><child nodeId="node-1205"></child>
         </children>
     </item>
-    <item nodeId="node-1085">
+    <item nodeId="node-1205">
         <command xml:space="preserve">yes</command>
         <result xml:space="preserve">
 
@@ -1159,10 +1272,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1086"></child>
+        <children><child nodeId="node-1206"></child>
         </children>
     </item>
-    <item nodeId="node-1086">
+    <item nodeId="node-1206">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -1170,10 +1283,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1087"></child>
+        <children><child nodeId="node-1207"></child>
         </children>
     </item>
-    <item nodeId="node-1087">
+    <item nodeId="node-1207">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 South Security Room
@@ -1181,10 +1294,10 @@ The bathroom is to the north and there's a security checkpoint to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1088"></child>
+        <children><child nodeId="node-1208"></child>
         </children>
     </item>
-    <item nodeId="node-1088">
+    <item nodeId="node-1208">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -1192,10 +1305,10 @@ There's a security room to the west and the cafeteria to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1089"></child>
+        <children><child nodeId="node-1209"></child>
         </children>
     </item>
-    <item nodeId="node-1089">
+    <item nodeId="node-1209">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1203,10 +1316,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1090"></child>
+        <children><child nodeId="node-1210"></child>
         </children>
     </item>
-    <item nodeId="node-1090">
+    <item nodeId="node-1210">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -1214,10 +1327,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1091"></child>
+        <children><child nodeId="node-1211"></child>
         </children>
     </item>
-    <item nodeId="node-1091">
+    <item nodeId="node-1211">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1225,10 +1338,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1092"></child>
+        <children><child nodeId="node-1212"></child>
         </children>
     </item>
-    <item nodeId="node-1092">
+    <item nodeId="node-1212">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1236,10 +1349,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1093"></child>
+        <children><child nodeId="node-1213"></child>
         </children>
     </item>
-    <item nodeId="node-1093">
+    <item nodeId="node-1213">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 East Security Room
@@ -1250,7 +1363,7 @@ You can see Security Guard here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1094">
+    <item nodeId="node-1214">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cell Room 1
@@ -1258,10 +1371,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1095"></child>
+        <children><child nodeId="node-1215"></child>
         </children>
     </item>
-    <item nodeId="node-1095">
+    <item nodeId="node-1215">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -1269,10 +1382,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
+        <children><child nodeId="node-1216"></child>
         </children>
     </item>
-    <item nodeId="node-1096">
+    <item nodeId="node-1216">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 South Security Room
@@ -1280,10 +1393,10 @@ The bathroom is to the north and there's a security checkpoint to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1097"></child>
+        <children><child nodeId="node-1217"></child>
         </children>
     </item>
-    <item nodeId="node-1097">
+    <item nodeId="node-1217">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -1291,35 +1404,186 @@ There's a security room to the west and the cafeteria to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1098"></child>
+        <children><child nodeId="node-1218"></child>
         </children>
     </item>
-    <item nodeId="node-1098">
+    <item nodeId="node-1218">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1155">
+    <item nodeId="node-1219">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
-Cafeteria
-There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.
+Cell Room 2
+The cells are on the northern side of the room. There's another cell room to the west and the security room is to east. The cafeteria is to the south.
+
+You can see a rusted metal door and Joe here.
+
+Security guard heads to cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1284"></child>
+        </children>
+    </item>
+    <item nodeId="node-1284">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Joe's Cell
+...
+
+Security guard heads to security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1285"></child>
+        </children>
+    </item>
+    <item nodeId="node-1285">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Storage Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1286"></child>
+        </children>
+    </item>
+    <item nodeId="node-1286">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to prison bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1287"></child>
+        </children>
+    </item>
+    <item nodeId="node-1287">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1288"></child>
+        </children>
+    </item>
+    <item nodeId="node-1288">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 2.
+
+The security guard continues walking to the next room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1289"></child>
+        </children>
+    </item>
+    <item nodeId="node-1289">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Security Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1290"></child>
+        </children>
+    </item>
+    <item nodeId="node-1290">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 2.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1291"></child>
+        </children>
+    </item>
+    <item nodeId="node-1291">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to cafeteria.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1292"></child>
+        </children>
+    </item>
+    <item nodeId="node-1292">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to security checkpoint 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1293"></child>
+        </children>
+    </item>
+    <item nodeId="node-1293">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Storage Room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1294"></child>
+        </children>
+    </item>
+    <item nodeId="node-1294">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to prison bathroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1295"></child>
+        </children>
+    </item>
+    <item nodeId="node-1295">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 1.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1296"></child>
+        </children>
+    </item>
+    <item nodeId="node-1296">
+        <command xml:space="preserve">z</command>
+        <result xml:space="preserve">Time passes.
+
+Security guard heads to Cell Room 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1099">
+    <item nodeId="node-1220">
         <command xml:space="preserve">rules on</command>
         <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1100"></child>
+        <children><child nodeId="node-1221"></child>
         </children>
     </item>
-    <item nodeId="node-1100">
+    <item nodeId="node-1221">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
 [Rule "standard set going variables rule" applies.]
@@ -1383,10 +1647,10 @@ There's a cell room to the north and the cafeteria is to the east.
 [Rule "notify score changes rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1101"></child>
+        <children><child nodeId="node-1222"></child>
         </children>
     </item>
-    <item nodeId="node-1101">
+    <item nodeId="node-1222">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
 [Rule "standard set going variables rule" applies.]
@@ -1450,63 +1714,63 @@ The bathroom is to the north and there's a security checkpoint to the east.
 [Rule "notify score changes rule" applies.]
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1102"></child>
+        <children><child nodeId="node-1223"></child>
         </children>
     </item>
-    <item nodeId="node-1102">
+    <item nodeId="node-1223">
         <command xml:space="preserve"> rules off</command>
         <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
 Rules tracing now switched off. Type "rules" to switch it on again.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1103"></child>
+        <children><child nodeId="node-1224"></child>
         </children>
     </item>
-    <item nodeId="node-1103">
+    <item nodeId="node-1224">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1104"></child>
+        <children><child nodeId="node-1225"></child>
         </children>
     </item>
-    <item nodeId="node-1104">
+    <item nodeId="node-1225">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1105"></child>
+        <children><child nodeId="node-1226"></child>
         </children>
     </item>
-    <item nodeId="node-1105">
+    <item nodeId="node-1226">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1106"></child>
+        <children><child nodeId="node-1227"></child>
         </children>
     </item>
-    <item nodeId="node-1106">
+    <item nodeId="node-1227">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1107"></child>
+        <children><child nodeId="node-1228"></child>
         </children>
     </item>
-    <item nodeId="node-1107">
+    <item nodeId="node-1228">
         <command xml:space="preserve">z</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1108">
+    <item nodeId="node-1229">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cell Room 2
@@ -1518,11 +1782,11 @@ Security guard heads to security checkpoint 2.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1109"></child>
-            <child nodeId="node-1177"></child>
+        <children><child nodeId="node-1231"></child>
+            <child nodeId="node-1230"></child>
         </children>
     </item>
-    <item nodeId="node-1177">
+    <item nodeId="node-1230">
         <command xml:space="preserve">talk to joe</command>
         <result xml:space="preserve">You must supply a noun.
 
@@ -1531,7 +1795,7 @@ Security guard heads to Cafeteria.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1109">
+    <item nodeId="node-1231">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 East Security Room
@@ -1539,10 +1803,10 @@ There's cell room to the west and a security checkpoint to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1110"></child>
+        <children><child nodeId="node-1232"></child>
         </children>
     </item>
-    <item nodeId="node-1110">
+    <item nodeId="node-1232">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1550,11 +1814,11 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1151"></child>
-            <child nodeId="node-1111"></child>
+        <children><child nodeId="node-1273"></child>
+            <child nodeId="node-1233"></child>
         </children>
     </item>
-    <item nodeId="node-1111">
+    <item nodeId="node-1233">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1562,10 +1826,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1112"></child>
+        <children><child nodeId="node-1234"></child>
         </children>
     </item>
-    <item nodeId="node-1112">
+    <item nodeId="node-1234">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 1
@@ -1573,10 +1837,10 @@ There's a security room to the west and the cafeteria to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1113"></child>
+        <children><child nodeId="node-1235"></child>
         </children>
     </item>
-    <item nodeId="node-1113">
+    <item nodeId="node-1235">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 South Security Room
@@ -1584,10 +1848,10 @@ The bathroom is to the north and there's a security checkpoint to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1114"></child>
+        <children><child nodeId="node-1236"></child>
         </children>
     </item>
-    <item nodeId="node-1114">
+    <item nodeId="node-1236">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -1595,10 +1859,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1115"></child>
+        <children><child nodeId="node-1237"></child>
         </children>
     </item>
-    <item nodeId="node-1115">
+    <item nodeId="node-1237">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Cell Room 1
@@ -1606,10 +1870,10 @@ There's another cell room to the east and the bathroom is to the south.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1116"></child>
+        <children><child nodeId="node-1238"></child>
         </children>
     </item>
-    <item nodeId="node-1116">
+    <item nodeId="node-1238">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Prison Bathroom
@@ -1617,10 +1881,10 @@ There's a cell room to the north and the cafeteria is to the east.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1117"></child>
+        <children><child nodeId="node-1239"></child>
         </children>
     </item>
-    <item nodeId="node-1117">
+    <item nodeId="node-1239">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1628,10 +1892,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1118"></child>
+        <children><child nodeId="node-1240"></child>
         </children>
     </item>
-    <item nodeId="node-1118">
+    <item nodeId="node-1240">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1639,19 +1903,19 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1119"></child>
+        <children><child nodeId="node-1241"></child>
         </children>
     </item>
-    <item nodeId="node-1119">
+    <item nodeId="node-1241">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1120"></child>
+        <children><child nodeId="node-1242"></child>
         </children>
     </item>
-    <item nodeId="node-1120">
+    <item nodeId="node-1242">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1659,10 +1923,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1121"></child>
+        <children><child nodeId="node-1243"></child>
         </children>
     </item>
-    <item nodeId="node-1121">
+    <item nodeId="node-1243">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1670,10 +1934,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1122"></child>
+        <children><child nodeId="node-1244"></child>
         </children>
     </item>
-    <item nodeId="node-1122">
+    <item nodeId="node-1244">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1681,10 +1945,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1123"></child>
+        <children><child nodeId="node-1245"></child>
         </children>
     </item>
-    <item nodeId="node-1123">
+    <item nodeId="node-1245">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1692,10 +1956,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1124"></child>
+        <children><child nodeId="node-1246"></child>
         </children>
     </item>
-    <item nodeId="node-1124">
+    <item nodeId="node-1246">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1703,10 +1967,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1125"></child>
+        <children><child nodeId="node-1247"></child>
         </children>
     </item>
-    <item nodeId="node-1125">
+    <item nodeId="node-1247">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1714,10 +1978,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1126"></child>
+        <children><child nodeId="node-1248"></child>
         </children>
     </item>
-    <item nodeId="node-1126">
+    <item nodeId="node-1248">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1725,10 +1989,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1127"></child>
+        <children><child nodeId="node-1249"></child>
         </children>
     </item>
-    <item nodeId="node-1127">
+    <item nodeId="node-1249">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1736,10 +2000,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1128"></child>
+        <children><child nodeId="node-1250"></child>
         </children>
     </item>
-    <item nodeId="node-1128">
+    <item nodeId="node-1250">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1747,10 +2011,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1129"></child>
+        <children><child nodeId="node-1251"></child>
         </children>
     </item>
-    <item nodeId="node-1129">
+    <item nodeId="node-1251">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1758,10 +2022,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1130"></child>
+        <children><child nodeId="node-1252"></child>
         </children>
     </item>
-    <item nodeId="node-1130">
+    <item nodeId="node-1252">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1769,10 +2033,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1131"></child>
+        <children><child nodeId="node-1253"></child>
         </children>
     </item>
-    <item nodeId="node-1131">
+    <item nodeId="node-1253">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1780,10 +2044,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1132"></child>
+        <children><child nodeId="node-1254"></child>
         </children>
     </item>
-    <item nodeId="node-1132">
+    <item nodeId="node-1254">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1791,10 +2055,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1133"></child>
+        <children><child nodeId="node-1255"></child>
         </children>
     </item>
-    <item nodeId="node-1133">
+    <item nodeId="node-1255">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1802,10 +2066,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1134"></child>
+        <children><child nodeId="node-1256"></child>
         </children>
     </item>
-    <item nodeId="node-1134">
+    <item nodeId="node-1256">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1813,10 +2077,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1135"></child>
+        <children><child nodeId="node-1257"></child>
         </children>
     </item>
-    <item nodeId="node-1135">
+    <item nodeId="node-1257">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1824,10 +2088,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1136"></child>
+        <children><child nodeId="node-1258"></child>
         </children>
     </item>
-    <item nodeId="node-1136">
+    <item nodeId="node-1258">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1835,10 +2099,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1137"></child>
+        <children><child nodeId="node-1259"></child>
         </children>
     </item>
-    <item nodeId="node-1137">
+    <item nodeId="node-1259">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1846,10 +2110,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1138"></child>
+        <children><child nodeId="node-1260"></child>
         </children>
     </item>
-    <item nodeId="node-1138">
+    <item nodeId="node-1260">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1857,10 +2121,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1139"></child>
+        <children><child nodeId="node-1261"></child>
         </children>
     </item>
-    <item nodeId="node-1139">
+    <item nodeId="node-1261">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1868,10 +2132,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1140"></child>
+        <children><child nodeId="node-1262"></child>
         </children>
     </item>
-    <item nodeId="node-1140">
+    <item nodeId="node-1262">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1879,10 +2143,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1141"></child>
+        <children><child nodeId="node-1263"></child>
         </children>
     </item>
-    <item nodeId="node-1141">
+    <item nodeId="node-1263">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1890,10 +2154,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1142"></child>
+        <children><child nodeId="node-1264"></child>
         </children>
     </item>
-    <item nodeId="node-1142">
+    <item nodeId="node-1264">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1901,10 +2165,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1143"></child>
+        <children><child nodeId="node-1265"></child>
         </children>
     </item>
-    <item nodeId="node-1143">
+    <item nodeId="node-1265">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1912,10 +2176,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1144"></child>
+        <children><child nodeId="node-1266"></child>
         </children>
     </item>
-    <item nodeId="node-1144">
+    <item nodeId="node-1266">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1923,10 +2187,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1145"></child>
+        <children><child nodeId="node-1267"></child>
         </children>
     </item>
-    <item nodeId="node-1145">
+    <item nodeId="node-1267">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1934,10 +2198,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1146"></child>
+        <children><child nodeId="node-1268"></child>
         </children>
     </item>
-    <item nodeId="node-1146">
+    <item nodeId="node-1268">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Cafeteria
@@ -1945,10 +2209,10 @@ There's a cell room to the north, bathroom to the west, security checkpoint to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1147"></child>
+        <children><child nodeId="node-1269"></child>
         </children>
     </item>
-    <item nodeId="node-1147">
+    <item nodeId="node-1269">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1956,10 +2220,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1148"></child>
+        <children><child nodeId="node-1270"></child>
         </children>
     </item>
-    <item nodeId="node-1148">
+    <item nodeId="node-1270">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 East Security Room
@@ -1969,10 +2233,10 @@ You can see a security guard here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1149"></child>
+        <children><child nodeId="node-1271"></child>
         </children>
     </item>
-    <item nodeId="node-1149">
+    <item nodeId="node-1271">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 security checkpoint 2
@@ -1980,10 +2244,10 @@ There's a security room to the north and the cafeteria to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1150"></child>
+        <children><child nodeId="node-1272"></child>
         </children>
     </item>
-    <item nodeId="node-1150">
+    <item nodeId="node-1272">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 East Security Room
@@ -1994,7 +2258,7 @@ You can see a security guard here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1151">
+    <item nodeId="node-1273">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Freedom
