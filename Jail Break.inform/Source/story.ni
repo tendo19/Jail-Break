@@ -65,11 +65,45 @@ Understand "talk to [someone]" as talking to. Understand "talk to [something]" a
 Understand "talk to Joe" or "converse with Joe" as talking to.
 
 
-A security guard is a man in the security room.
+A security guard is a man in security checkpoint 2.
 The description of security guard is "..."
 Understand "guard" as security guard.
 
-Table of security guard's movement
+Table of security guard's movements
+current space	next space
+Security Room	Security Checkpoint 2
+Security Checkpoint 2	Cafeteria
+Cafeteria	Security Checkpoint 1
+Security Checkpoint 1	Storage Room
+Storage Room	Prison Bathroom
+Prison Bathroom	Cell Room 1
+Cell Room 1	Cell Room 2
+Cell Room 2	Security Room
+
+Every turn:
+	if security guard is in a room (called croom):
+		let nroom be the next space corresponding to a current space of croom in the Table of security guard's movements;
+		move security guard to nroom;
+		say "The security guard is in [croom] and is headed towards [nroom].";
+	If player is not in Your Cell:
+		If security guard is visible:
+			if player is not wearing security uniform:
+				end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";			
+	If player is not in Joe's Cell:	
+		If security guard is visible:
+			if player is not wearing security uniform:
+				end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";		
+	If player is in Your Cell:
+		If security guard is in cell room 1:
+			say "You see the security guard walking to the next room.";			
+	If player is in Joe's Cell:
+		If security guard is in cell room 2:
+			say "You see the security guard walking to the next room.";
+
+
+	
+
+[Table of security guard's movement
 destination
 Security Checkpoint 2
 Cafeteria
@@ -113,31 +147,43 @@ Every turn when security guard is active:
 		blank out the whole row;
 		break.
 
-Security guard can be active or passive. He is active.
+Security guard can be active or passive. He is active.]
 
-Every turn rule:
+[Every turn rule:
 	If player is not in Your Cell:
 		If security guard is visible:
-			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
-	If player is not in Joe's Cell:
+			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";			
+	If player is not in Joe's Cell:	
 		If security guard is visible:
-			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
+			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";		
 	If player is in Your Cell:
 		If security guard is in cell room 1:
-			say "The security guard continues walking to the next room.";
+		say "The security guard continues walking to the next room.";				
 	If player is in Joe's Cell:
 		If security guard is in cell room 2:
-			say "The security guard continues walking to the next room."
+		say "The security guard continues walking to the next room."]
 
 
 
 Security Uniform is a thing.
 It is wearable.
 It is in the storage room.
+The description of it is "Use this to disguise as a guard. As long as you act natural, they shouldn't notice that you're a prisoner."
 
 Security camera monitor is a thing.
-It is in the east security room. 
+It is not portable.
+It is in the security room. 
+The description is "You can see one guard in security checkpoint 1 and another guard at security checkpoint 2. Those are the only ways to escape. You have to figure out a way to get past them without being noticed."
+
+A bulletin board is a thing.
+It is a container.
+It is not portable.
+It is in the security room.
 The description is "..."
+
+The note is a thing in the bulletin board.
+It is not portable.
+The description is "It reads: Door Pin Code: 9283 . . . a piece of the paper is missing. What could the last two digits be?"
 
 The metal door is north of prison bathroom.
 The metal door is a door.
@@ -147,14 +193,14 @@ The rusted metal door is north of cafeteria.
 The rusted metal door is a door.
 It is lockable and locked.
 
-The description of the metal door is "Enter six-digit code to unlock."
+The description of the metal door is "Enter the six-digit pin code to unlock it."
 	After examining the metal door:
-		now the command prompt is "Please enter the six-digit locker pin code. >";
+		now the command prompt is "Please enter the six-digit pin code. >";
 		continue the action.
    
 After reading a command when the command prompt is "Please enter the six-digit pin code. >":
 	increment the turn count;
-	if the player's command matches "112098": 
+	if the player's command matches "928369": 
 		now the metal door is unlocked;
 		say "**BUZZ**  Access granted";
 		now the command prompt is ">";
@@ -165,7 +211,7 @@ After reading a command when the command prompt is "Please enter the six-digit p
    
 After reading a command when the command prompt is "Would you like to try again? (Yes or No) >":
 	if the player's command matches "yes" or the player's command matches "y": 
-		now the command prompt is "Please enter the six-digit locker pin code. >";
+		now the command prompt is "Please enter the six-digit pin code. >";
 		say line break;
 		say run paragraph on;
 		reject the player's command;
@@ -178,15 +224,18 @@ After reading a command when the command prompt is "Would you like to try again?
 		say line break;
 		say run paragraph on;
 		reject the player's command.
+		
 
-The description of the rusted metal door is "Enter six-digit code to unlock."
+
+
+The description of the rusted metal door is "Please enter the six-digit pin code to unlock it."
 	After examining the rusted metal door:
-		now the command prompt is "Please enter the six-digit locker pin code. >";
+		now the command prompt is "Please enter the six-digit pin code. >";
 		continue the action.
-
+   
 After reading a command when the command prompt is "Please enter the six-digit pin code. >":
 	increment the turn count;
-	if the player's command matches "112098": 
+	if the player's command matches "928369": 
 		now the rusted metal door is unlocked;
 		say "**BUZZ**  Access granted";
 		now the command prompt is ">";
@@ -197,7 +246,7 @@ After reading a command when the command prompt is "Please enter the six-digit p
    
 After reading a command when the command prompt is "Would you like to try again? (Yes or No) >":
 	if the player's command matches "yes" or the player's command matches "y": 
-		now the command prompt is "Please enter the six-digit locker pin code. >";
+		now the command prompt is "Please enter the six-digit pin code. >";
 		say line break;
 		say run paragraph on;
 		reject the player's command;
@@ -210,5 +259,4 @@ After reading a command when the command prompt is "Would you like to try again?
 		say line break;
 		say run paragraph on;
 		reject the player's command.
-
 
