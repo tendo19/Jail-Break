@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "190405";
+Serial "190409";
 
 Default Story 0;
 Default Headline 0;
@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*31;
+Constant REQUISITION_STACK_SIZE = 3*39;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10548,12 +10548,12 @@ Constant IK1_First = I125_your_cell;
 Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = I129_metal_door;
-Constant IK5_First = I141_bulletin_board;
+Constant IK5_First = I143_bulletin_board;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
-Constant IK10_First = I137_joe;
+Constant IK10_First = I139_joe;
 Constant IK11_First = nothing;
 Constant IK12_First = nothing;
 Constant IK13_First = nothing;
@@ -10579,11 +10579,13 @@ Array Map_Storage -->
  0 0 0 I128_cell_room_2 0 0 0 0 0 0 0 0 ! Exits from: I127_joe_s_cell
  I127_joe_s_cell 0 0 I130_rusted_metal_door 0 0 I131_security_room I126_cell_room_1 0 0 0 0 ! Exits from: I128_cell_room_2
  0 0 0 I135_security_checkpoint_2 0 0 0 I128_cell_room_2 0 0 0 0 ! Exits from: I131_security_room
- I133_prison_bathroom 0 0 0 0 0 I134_security_checkpoint_1 0 0 0 0 0 ! Exits from: I132_storage_room
- I129_metal_door 0 0 I132_storage_room 0 0 I136_cafeteria 0 0 0 0 0 ! Exits from: I133_prison_bathroom
- I136_cafeteria 0 0 0 0 0 0 I132_storage_room 0 0 0 0 ! Exits from: I134_security_checkpoint_1
- I131_security_room 0 0 0 0 0 0 I136_cafeteria 0 0 0 0 ! Exits from: I135_security_checkpoint_2
- I130_rusted_metal_door 0 0 I134_security_checkpoint_1 0 0 I135_security_checkpoint_2 I133_prison_bathroom 0 0 0 0 ! Exits from: I136_cafeteria
+ I133_storage_door 0 0 0 0 0 I134_security_checkpoint_1 0 0 0 0 0 ! Exits from: I132_storage_room
+ I137_cafeteria 0 0 0 0 0 I138_freedom I132_storage_room 0 0 0 0 ! Exits from: I134_security_checkpoint_1
+ I131_security_room 0 0 I138_freedom 0 0 0 I137_cafeteria 0 0 0 0 ! Exits from: I135_security_checkpoint_2
+ I129_metal_door 0 0 I133_storage_door 0 0 I137_cafeteria 0 0 0 0 0 ! Exits from: I136_prison_bathroom
+ I130_rusted_metal_door 0 0 I134_security_checkpoint_1 0 0 I135_security_checkpoint_2 I136_prison_bathroom 0 0 0 0 ! Exits from: I137_cafeteria
+ I135_security_checkpoint_2 0 0 0 0 0 I150_things_room I134_security_checkpoint_1 0 0 0 0 ! Exits from: I138_freedom
+ 0 0 0 0 0 0 0 I138_freedom 0 0 0 0 ! Exits from: I150_things_room
 ;
 
 Class VPH_Class;
@@ -11053,9 +11055,9 @@ Object -> selfobj ""
     with cap_short_name BC_149
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I137_joe
+    with IK2_Link I139_joe
     with IK8_Count 0
-    with IK8_Link I137_joe
+    with IK8_Link I139_joe
     with KD_Count 8
     with parse_name Parse_Name_GV13
     with action_bitmap 0 0 0 0 0 
@@ -11116,19 +11118,19 @@ Object I128_cell_room_2 ""
     with article BC_168
 ;
 
-Object -> I137_joe ""
+Object -> I139_joe ""
     class K10_man
     with short_name BC_169
     with description BC_170
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 3
+    with IK2_Count 4
     with IK2_Link I129_metal_door
     with IK8_Count 1
-    with IK8_Link I138_security_guard
+    with IK8_Link I140_security_guard
     with IK10_Count 0
-    with IK10_Link I138_security_guard
+    with IK10_Link I140_security_guard
     with KD_Count 10
     with name 'joe' 'men//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11156,8 +11158,8 @@ Object I129_metal_door ""
         ;
         loc = location;
         if (loc == thedark) loc = real_location;
-        if (loc == I126_cell_room_1) return I133_prison_bathroom; return I126_cell_room_1;],
-    with found_in I126_cell_room_1 I133_prison_bathroom
+        if (loc == I126_cell_room_1) return I136_prison_bathroom; return I126_cell_room_1;],
+    with found_in I126_cell_room_1 I136_prison_bathroom
     has mark_as_thing
     with IK2_Count 1
     with IK2_Link I130_rusted_metal_door
@@ -11190,13 +11192,13 @@ Object I130_rusted_metal_door ""
         ;
         loc = location;
         if (loc == thedark) loc = real_location;
-        if (loc == I128_cell_room_2) return I136_cafeteria; return I128_cell_room_2;],
-    with found_in I128_cell_room_2 I136_cafeteria
+        if (loc == I128_cell_room_2) return I137_cafeteria; return I128_cell_room_2;],
+    with found_in I128_cell_room_2 I137_cafeteria
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link I140_security_camera_monitor
+    with IK2_Link I142_security_camera_monitor
     with IK4_Count 1
-    with IK4_Link nothing
+    with IK4_Link I133_storage_door
     with KD_Count 4
     with name 'rusted' 'metal' 'door' 'doors//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11223,7 +11225,7 @@ Object I131_security_room ""
     with article BC_191
 ;
 
-Object -> I140_security_camera_monitor ""
+Object -> I142_security_camera_monitor ""
     class K2_thing
     with short_name BC_192
     with description BC_193
@@ -11231,8 +11233,8 @@ Object -> I140_security_camera_monitor ""
     has static
     with vector 0
     has mark_as_thing
-    with IK2_Count 6
-    with IK2_Link I141_bulletin_board
+    with IK2_Count 7
+    with IK2_Link I143_bulletin_board
     with KD_Count 2
     with name 'security' 'camera' 'monitor' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11242,17 +11244,17 @@ Object -> I140_security_camera_monitor ""
     with article BC_197
 ;
 
-Object -> I141_bulletin_board ""
+Object -> I143_bulletin_board ""
     class K5_container
     with short_name BC_198
     with description BC_199
     has static
     with vector 0
     has mark_as_thing
-    with IK2_Count 7
-    with IK2_Link I142_note
+    with IK2_Count 8
+    with IK2_Link I144_note
     with IK5_Count 0
-    with IK5_Link nothing
+    with IK5_Link I145_trash_can
     with KD_Count 5
     with name 'bulletin' 'board' 'containers//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11262,15 +11264,15 @@ Object -> I141_bulletin_board ""
     with article BC_203
 ;
 
-Object -> -> I142_note ""
+Object -> -> I144_note ""
     class K2_thing
     with short_name BC_204
     with description BC_205
     has static
     with vector 0
     has mark_as_thing
-    with IK2_Count 8
-    with IK2_Link I139_security_uniform
+    with IK2_Count 9
+    with IK2_Link I145_trash_can
     with KD_Count 2
     with name 'note' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11280,104 +11282,162 @@ Object -> -> I142_note ""
     with article BC_209
 ;
 
-Object I132_storage_room ""
-    class K1_room
+Object -> I145_trash_can ""
+    class K5_container
     with short_name BC_210
     with description BC_211
+    has proper
+    has static
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link I146_piece_of_paper
+    with IK5_Count 1
+    with IK5_Link nothing
+    with KD_Count 5
+    with name 'trash' 'can' 'containers//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_212
+    with list_together BC_213
+    with plural BC_214
+    with article BC_215
+;
+
+Object -> -> I146_piece_of_paper ""
+    class K2_thing
+    with short_name BC_216
+    with description BC_217
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 11
+    with IK2_Link I141_security_uniform
+    with KD_Count 2
+    with name 'piece' 'of' 'paper' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_218
+    with list_together BC_219
+    with plural BC_220
+    with article BC_221
+;
+
+Object I132_storage_room ""
+    class K1_room
+    with short_name BC_222
+    with description BC_223
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 5
-    with IK1_Link I133_prison_bathroom
-    with KD_Count 1
-    with name 'storage' 'room' 'rooms//p' 
-    with list_together BC_212
-    with plural BC_213
-    with article BC_214
-;
-
-Object -> I139_security_uniform ""
-    class K2_thing
-    with short_name BC_215
-    with description BC_216
-    has proper
-    has clothing
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 5
-    with IK2_Link I138_security_guard
-    with KD_Count 2
-    with name 'security' 'uniform' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_217
-    with list_together BC_218
-    with plural BC_219
-    with article BC_220
-;
-
-Object I133_prison_bathroom ""
-    class K1_room
-    with short_name BC_221
-    with description BC_222
-    has proper
-    with vector 0
-    with room_index -1
-    with cap_short_name BC_223
-    has mark_as_room
-    with IK1_Count 6
     with IK1_Link I134_security_checkpoint_1
     with KD_Count 1
-    with name 'prison' 'bathroom' 'rooms//p' 
+    with name 'storage' 'room' 'rooms//p' 
     with list_together BC_224
     with plural BC_225
     with article BC_226
 ;
 
-Object I134_security_checkpoint_1 ""
-    class K1_room
+Object -> I141_security_uniform ""
+    class K2_thing
     with short_name BC_227
     with description BC_228
     has proper
+    has clothing
     with vector 0
-    with room_index -1
-    with cap_short_name BC_229
-    has mark_as_room
-    with IK1_Count 7
-    with IK1_Link I135_security_checkpoint_2
-    with KD_Count 1
-    with name 'security' 'checkpoint' '1//' 'rooms//p' 
+    has mark_as_thing
+    with IK2_Count 6
+    with IK2_Link I133_storage_door
+    with KD_Count 2
+    with name 'security' 'uniform' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_229
     with list_together BC_230
     with plural BC_231
     with article BC_232
 ;
 
-Object I135_security_checkpoint_2 ""
-    class K1_room
+Object I133_storage_door ""
+    class K4_door
     with short_name BC_233
     with description BC_234
+    with with_key I147_key_card
+    has proper
+    has lockable
+    has locked
+    with vector 0
+    with door_dir [ 
+        loc ! room of actor
+        ;
+        loc = location;
+        if (loc == thedark) loc = real_location;
+        if (loc == I132_storage_room) return I51_north; return I54_south;],
+    with door_to [ 
+        loc ! room of actor
+        ;
+        loc = location;
+        if (loc == thedark) loc = real_location;
+        if (loc == I132_storage_room) return I136_prison_bathroom; return I132_storage_room;],
+    with found_in I132_storage_room I136_prison_bathroom
+    with cap_short_name BC_235
+    has mark_as_thing
+    with IK2_Count 3
+    with IK2_Link I140_security_guard
+    with IK4_Count 2
+    with IK4_Link nothing
+    with KD_Count 4
+    with name 'storage' 'door' 'doors//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_236
+    with list_together BC_237
+    with plural BC_238
+    with article BC_239
+;
+
+Object I134_security_checkpoint_1 ""
+    class K1_room
+    with short_name BC_240
+    with description BC_241
     has proper
     with vector 0
     with room_index -1
-    with cap_short_name BC_235
+    with cap_short_name BC_242
     has mark_as_room
-    with IK1_Count 8
-    with IK1_Link I136_cafeteria
+    with IK1_Count 6
+    with IK1_Link I135_security_checkpoint_2
     with KD_Count 1
-    with name 'security' 'checkpoint' '2//' 'rooms//p' 
-    with list_together BC_236
-    with plural BC_237
-    with article BC_238
+    with name 'security' 'checkpoint' '1//' 'rooms//p' 
+    with list_together BC_243
+    with plural BC_244
+    with article BC_245
 ;
 
-Object -> I138_security_guard ""
+Object I135_security_checkpoint_2 ""
+    class K1_room
+    with short_name BC_246
+    with description BC_247
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_248
+    has mark_as_room
+    with IK1_Count 7
+    with IK1_Link I136_prison_bathroom
+    with KD_Count 1
+    with name 'security' 'checkpoint' '2//' 'rooms//p' 
+    with list_together BC_249
+    with plural BC_250
+    with article BC_251
+;
+
+Object -> I140_security_guard ""
     class K10_man
-    with short_name BC_239
-    with description BC_240
+    with short_name BC_252
+    with description BC_253
     with vector 0
     has mark_as_thing
-    with IK2_Count 4
-    with IK2_Link nothing
+    with IK2_Count 5
+    with IK2_Link I149_broken_plunger
     with IK8_Count 2
     with IK8_Link nothing
     with IK10_Count 1
@@ -11386,28 +11446,134 @@ Object -> I138_security_guard ""
     with name 'security' 'guard' 'men//p' 'guard' 
     with parse_name Parse_Name_GV95
     with action_bitmap 0 0 0 0 0 
-    with initial BC_241
-    with list_together BC_242
-    with plural BC_243
-    with article BC_244
+    with initial BC_254
+    with list_together BC_255
+    with plural BC_256
+    with article BC_257
 ;
 
-Object I136_cafeteria ""
+Object I136_prison_bathroom ""
     class K1_room
-    with short_name BC_245
-    with description BC_246
+    with short_name BC_258
+    with description BC_259
     has proper
     with vector 0
     with room_index -1
-    with cap_short_name BC_247
+    has mark_as_room
+    with IK1_Count 8
+    with IK1_Link I137_cafeteria
+    with KD_Count 1
+    with name 'prison' 'bathroom' 'rooms//p' 
+    with list_together BC_260
+    with plural BC_261
+    with article BC_262
+;
+
+Object -> I149_broken_plunger ""
+    class K2_thing
+    with short_name BC_263
+    with description BC_264
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 14
+    with IK2_Link I148_fork
+    with KD_Count 2
+    with name 'broken' 'plunger' 'things//p' 'plunger' 
+    with parse_name Parse_Name_GV96
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_265
+    with list_together BC_266
+    with plural BC_267
+    with article BC_268
+;
+
+Object I137_cafeteria ""
+    class K1_room
+    with short_name BC_269
+    with description BC_270
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_271
     has mark_as_room
     with IK1_Count 9
-    with IK1_Link nothing
+    with IK1_Link I138_freedom
     with KD_Count 1
     with name 'cafeteria' 'rooms//p' 
-    with list_together BC_248
-    with plural BC_249
-    with article BC_250
+    with list_together BC_272
+    with plural BC_273
+    with article BC_274
+;
+
+Object -> I148_fork ""
+    class K2_thing
+    with short_name BC_275
+    with description BC_276
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 13
+    with IK2_Link I147_key_card
+    with KD_Count 2
+    with name 'fork' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_277
+    with list_together BC_278
+    with plural BC_279
+    with article BC_280
+;
+
+Object I138_freedom ""
+    class K1_room
+    with short_name BC_281
+    with description BC_282
+    has proper
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 10
+    with IK1_Link I150_things_room
+    with KD_Count 1
+    with name 'freedom' 'rooms//p' 
+    with list_together BC_283
+    with plural BC_284
+    with article BC_285
+;
+
+Object I150_things_room ""
+    class K1_room
+    with short_name BC_286
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_287
+    has mark_as_room
+    with IK1_Count 11
+    with IK1_Link nothing
+    with KD_Count 1
+    with name 'things' 'room' 'rooms//p' 
+    with description BC_288
+    with list_together BC_289
+    with plural BC_290
+    with article BC_291
+;
+
+Object -> I147_key_card ""
+    class K2_thing
+    with short_name BC_292
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 12
+    with IK2_Link nothing
+    with KD_Count 2
+    with name 'key' 'card' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_293
+    with initial BC_294
+    with list_together BC_295
+    with plural BC_296
+    with article BC_297
 ;
 
 Constant I71_english_language = 1;
@@ -11461,12 +11627,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_251) ! 25 command prompt
+  (BC_298) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_252) ! 32 story author
-  (BC_253) ! 33 story headline
-  (BC_254) ! 34 story genre
-  (BC_255) ! 35 story description
+  (BC_299) ! 32 story author
+  (BC_300) ! 33 story headline
+  (BC_301) ! 34 story genre
+  (BC_302) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11481,17 +11647,17 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_256) (BC_257) (BC_258) (BC_259) (BC_260) ;
+Array tab_0_0 table $0664 0 (BC_303) (BC_304) (BC_305) (BC_306) (BC_307) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
-Array tab_0_2 table $2066 2 (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) (Consult_Grammar_99) (Consult_Grammar_100) ;
+Array tab_0_2 table $2066 2 (Consult_Grammar_97) (Consult_Grammar_98) (Consult_Grammar_99) (Consult_Grammar_100) (Consult_Grammar_101) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_security_guard_s_movement table  tab_2_0 tab_2_1;
-Array tab_2_0 table $086b NULL (I131_security_room) (I135_security_checkpoint_2) (I136_cafeteria) (I134_security_checkpoint_1) (I132_storage_room) (I133_prison_bathroom) (I126_cell_room_1) (I128_cell_room_2) ;
-Array tab_2_1 table $086c NULL (I135_security_checkpoint_2) (I136_cafeteria) (I134_security_checkpoint_1) (I132_storage_room) (I133_prison_bathroom) (I126_cell_room_1) (I128_cell_room_2) (I131_security_room) ;
+Array tab_2_0 table $086b NULL (I131_security_room) (I135_security_checkpoint_2) (I137_cafeteria) (I134_security_checkpoint_1) (I132_storage_room) (I136_prison_bathroom) (I126_cell_room_1) (I128_cell_room_2) ;
+Array tab_2_1 table $086c NULL (I135_security_checkpoint_2) (I137_cafeteria) (I134_security_checkpoint_1) (I132_storage_room) (I136_prison_bathroom) (I126_cell_room_1) (I128_cell_room_2) (I131_security_room) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11501,7 +11667,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $03  ! Column 1
+  $ff $ff  ! Column 1
   
   ! For table T2_security_guard_s_movement
   
@@ -12234,9 +12400,9 @@ Array ActionHappened --> 0 0 0 0 0;
 ! When play begins:
 [ R_799 ;
     if (debug_rules) DB_Rule(R_799, 799);
-    ! [2: say ~You beg to the guard to let you free. 'If you can't do the time, don't do the crime,' he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell.~]
-    say__p=1;! [3: ~You beg to the guard to let you free. 'If you can't do the time, don't do the crime,' he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell.~]
-    ParaContent(); print "You beg to the guard to let you free. ~If you can't do the time, don't do the crime,~ he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell."; new_line; .L_Say1; .L_SayX1;rfalse;
+    ! [2: say ~You beg to the guard to let you free. 'If you can't do the time, don't do the crime,' he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard. Never be in the same room as him or he'll catch you. The only place you're safe from is in the cell.~]
+    say__p=1;! [3: ~You beg to the guard to let you free. 'If you can't do the time, don't do the crime,' he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard. Never be in the same room as him or he'll catch you. The only place you're safe from is in the cell.~]
+    ParaContent(); print "You beg to the guard to let you free. ~If you can't do the time, don't do the crime,~ he replies coldly. You'll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard. Never be in the same room as him or he'll catch you. The only place you're safe from is in the cell."; new_line; .L_Say1; .L_SayX1;rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 
@@ -12267,66 +12433,95 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: Every turn (B8_every_turn)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/1 ! Every turn:
+! Rule 1/3 ! An every turn rule:
+!   === equally specific with ===
+! Rule 2/3 ! Every turn:
+!   === equally specific with ===
+! Rule 3/3 ! Every turn:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
+! An every turn rule:
+[ R_800 ;
+    if (debug_rules) DB_Rule(R_800, 800);
+    ! [2: if player is in freedom]
+    if (((I138_freedom == ContainerOf(player))))
+    {! [3: end the story saying ~You win!~]
+        deadflag=TX_L_92; story_complete=false;
+        }
+        rfalse;
+];
+! No specific request
 ! Every turn:
-[ R_801 
+[ R_802 
     tmp_0 ! Let/loop value, e.g., 'croom': room
     tmp_1 ! Let/loop value (deallocated by end of phrase)
     ;
-    if (debug_rules) DB_Rule(R_801, 801);
-    ! [2: if security guard is in a room ( called croom )]
-    if (((ContainerOf(I138_security_guard) ofclass K1_room) && (tmp_0=(ContainerOf(I138_security_guard)), true)))
-    {! [3: let nroom be the next space corresponding to a current space of croom in the table of security guard's movements]
+    if (debug_rules) DB_Rule(R_802, 802);
+    ! [2: if player is not in your cell]
+    if (((~~((I125_your_cell == ContainerOf(player))))))
+    {! [3: if security guard is visible]
+        if ((((Adj_3_t1_v10(I140_security_guard)))))
+        {! [4: if player is not wearing security uniform]
+            if (((~~((player == WearerOf(I141_security_uniform))))))
+            {! [5: end the story saying ~The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.~]
+                deadflag=TX_L_93; story_complete=false;
+                }
+                }
+                }
+    ! [6: if player is not in joe's cell]
+    if (((~~((I127_joe_s_cell == ContainerOf(player))))))
+    {! [7: if security guard is visible]
+        if ((((Adj_3_t1_v10(I140_security_guard)))))
+        {! [8: if player is not wearing security uniform]
+            if (((~~((player == WearerOf(I141_security_uniform))))))
+            {! [9: end the story saying ~The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.~]
+                deadflag=TX_L_93; story_complete=false;
+                }
+                }
+                }
+    ! [10: if player is in your cell]
+    if (((I125_your_cell == ContainerOf(player))))
+    {! [11: if security guard is in cell room 1]
+        if (((I126_cell_room_1 == ContainerOf(I140_security_guard))))
+        {! [12: say ~You see the security guard heading to the next room.~]
+            say__p=1;! [13: ~You see the security guard heading to the next room.~]
+            ParaContent(); print "You see the security guard heading to the next room."; new_line; .L_Say3; .L_SayX3;}
+            }
+    ! [14: if player is in joe's cell]
+    if (((I127_joe_s_cell == ContainerOf(player))))
+    {! [15: if security guard is in cell room 2]
+        if (((I128_cell_room_2 == ContainerOf(I140_security_guard))))
+        {! [16: say ~You see the security guard heading to the next room.~]
+            say__p=1;! [17: ~You see the security guard heading to the next room.~]
+            ParaContent(); print "You see the security guard heading to the next room."; new_line; .L_Say4; .L_SayX4;}
+            }
+    ! [18: if security guard is in a room ( called croom )]
+    if (((ContainerOf(I140_security_guard) ofclass K1_room) && (tmp_0=(ContainerOf(I140_security_guard)), true)))
+    {! [19: let nroom be the next space corresponding to a current space of croom in the table of security guard's movements]
 
         		tmp_1 = TableLookUpCorr(T2_security_guard_s_movement,108,107,tmp_0);
-        ! [4: move security guard to nroom]
-        MoveObject(I138_security_guard, tmp_1, 0, false);
-        ! [5: say ~The security guard is in [croom] and is headed towards [nroom].~]
-        say__p=1;! [6: ~The security guard is in ~]
-        ParaContent(); print "The security guard is in ";! [7: croom]
-        ParaContent(); PrintShortName(tmp_0);! [8: ~ and is headed towards ~]
-        ParaContent(); print " and is headed towards ";! [9: nroom]
-        ParaContent(); PrintShortName(tmp_1);! [10: ~.~]
-        ParaContent(); print "."; new_line; .L_Say3; .L_SayX3;}
-    ! [11: if player is not in your cell]
-    if (((~~((I125_your_cell == ContainerOf(player))))))
-    {! [12: if security guard is visible]
-        if ((((Adj_3_t1_v10(I138_security_guard)))))
-        {! [13: if player is not wearing security uniform]
-            if (((~~((player == WearerOf(I139_security_uniform))))))
-            {! [14: end the story saying ~The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.~]
-                deadflag=TX_L_80; story_complete=false;
-                }
-                }
-                }
-    ! [15: if player is not in joe's cell]
-    if (((~~((I127_joe_s_cell == ContainerOf(player))))))
-    {! [16: if security guard is visible]
-        if ((((Adj_3_t1_v10(I138_security_guard)))))
-        {! [17: if player is not wearing security uniform]
-            if (((~~((player == WearerOf(I139_security_uniform))))))
-            {! [18: end the story saying ~The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.~]
-                deadflag=TX_L_80; story_complete=false;
-                }
-                }
-                }
-    ! [19: if player is in your cell]
-    if (((I125_your_cell == ContainerOf(player))))
-    {! [20: if security guard is in cell room 1]
-        if (((I126_cell_room_1 == ContainerOf(I138_security_guard))))
-        {! [21: say ~You see the security guard walking to the next room.~]
-            say__p=1;! [22: ~You see the security guard walking to the next room.~]
-            ParaContent(); print "You see the security guard walking to the next room."; new_line; .L_Say4; .L_SayX4;}
+        ! [20: move security guard to nroom]
+        MoveObject(I140_security_guard, tmp_1, 0, false);
+        ! [21: say ~The security guard is in [croom] and is headed towards [nroom].~]
+        say__p=1;! [22: ~The security guard is in ~]
+        ParaContent(); print "The security guard is in ";! [23: croom]
+        ParaContent(); PrintShortName(tmp_0);! [24: ~ and is headed towards ~]
+        ParaContent(); print " and is headed towards ";! [25: nroom]
+        ParaContent(); PrintShortName(tmp_1);! [26: ~.~]
+        ParaContent(); print "."; new_line; .L_Say5; .L_SayX5;}
+        rfalse;
+];
+! No specific request
+! Every turn:
+[ R_809 ;
+    if (debug_rules) DB_Rule(R_809, 809);
+    ! [2: if player is carrying fork]
+    if (((player == CarrierOf(I148_fork))))
+    {! [3: if player is carrying plunger]
+        if (((player == CarrierOf(I149_broken_plunger))))
+        {! [4: move key card to cell room 2]
+            MoveObject(I147_key_card, I128_cell_room_2, 0, false);
             }
-    ! [23: if player is in joe's cell]
-    if (((I127_joe_s_cell == ContainerOf(player))))
-    {! [24: if security guard is in cell room 2]
-        if (((I128_cell_room_2 == ContainerOf(I138_security_guard))))
-        {! [25: say ~You see the security guard walking to the next room.~]
-            say__p=1;! [26: ~You see the security guard walking to the next room.~]
-            ParaContent(); print "You see the security guard walking to the next room."; new_line; .L_Say5; .L_SayX5;}
             }
             rfalse;
 ];
@@ -12755,10 +12950,10 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Instead of talking to Joe:
-[ R_800 ;
-    if ((((action ==##A77_talking_to) &&  (actor==player) && ((noun == I137_joe) && (true))))) { ! Runs only when pattern matches
+[ R_801 ;
+    if ((((action ==##A77_talking_to) &&  (actor==player) && ((noun == I139_joe) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_800, 800);
+    if (debug_rules) DB_Rule(R_801, 801);
     ! [2: say ~'How can I escape this place?' you ask.[paragraph break]'This prison is quite complex. You need to reach one of the security checkpoints without being caught,' he replies. [paragraph break] You say, 'Is there any way to sneak past the guards?'[paragraph break]'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'~]
     say__p=1;! [3: ~'How can I escape this place?' you ask.~]
     ParaContent(); print "~How can I escape this place?~ you ask.";! [4: paragraph break]
@@ -12768,7 +12963,7 @@ Array ActionHappened --> 0 0 0 0 0;
     ParaContent(); print " You say, ~Is there any way to sneak past the guards?~";! [8: paragraph break]
     ParaContent(); DivideParagraphPoint(); new_line;! [9: ~'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'~]
     ParaContent(); print "~Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.~"; new_line; .L_Say7; .L_SayX7;RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_800, 800, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_801, 801, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -12782,30 +12977,30 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After examining the metal door:
-[ R_802 ;
+[ R_803 ;
     if ((((action ==##Examine) &&  (actor==player) && ((noun == I129_metal_door) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_802, 802);
+    if (debug_rules) DB_Rule(R_803, 803);
     ! [2: now the command prompt is ~Please enter the six-digit pin code. >~]
-    BlkValueCopy((Global_Vars-->1), TX_L_81);
+    BlkValueCopy((Global_Vars-->1), TX_L_94);
     ! [3: continue the action]
     rfalse;
     RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_802, 802, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_803, 803, 'action');
     rfalse;
 ];
 ! No specific request
 ! After examining the rusted metal door:
-[ R_805 ;
+[ R_806 ;
     if ((((action ==##Examine) &&  (actor==player) && ((noun == I130_rusted_metal_door) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_805, 805);
+    if (debug_rules) DB_Rule(R_806, 806);
     ! [2: now the command prompt is ~Please enter the six-digit pin code. >~]
-    BlkValueCopy((Global_Vars-->1), TX_L_81);
+    BlkValueCopy((Global_Vars-->1), TX_L_94);
     ! [3: continue the action]
     rfalse;
     RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_805, 805, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_806, 806, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -12934,7 +13129,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: after Reading a command (B79_after_reading_a_command)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/4 ! After reading a command when the command prompt is ~Please enter the six-digit pin code. >~:
+! Rule 1/4 ! After reading a command when the command prompt is ~Enter a six-digit pin code to unlock the metal door. >~:
 !   === equally specific with ===
 ! Rule 2/4 ! After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~:
 !   === equally specific with ===
@@ -12943,40 +13138,42 @@ Array ActionHappened --> 0 0 0 0 0;
 ! Rule 4/4 ! After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
-! After reading a command when the command prompt is ~Please enter the six-digit pin code. >~:
-[ R_803 ;
-    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_81) == 0)))))) { ! Runs only while condition holds
-    if (debug_rules) DB_Rule(R_803, 803);
+! After reading a command when the command prompt is ~Enter a six-digit pin code to unlock the metal door. >~:
+[ R_804 ;
+    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_95) == 0)))))) { ! Runs only while condition holds
+    if (debug_rules) DB_Rule(R_804, 804);
     ! [2: increment the turn count]
     turns = turns + 1;;
-    ! [3: if the player's command matches ~928369~]
-    if (((SnippetMatches(players_command, Consult_Grammar_101))))
+    ! [3: if the player's command matches ~963829~]
+    if (((SnippetMatches(players_command, Consult_Grammar_102))))
     {! [4: now the metal door is unlocked]
         (Adj_78_t2_v10(I129_metal_door));
-        ! [5: say ~**BUZZ**  Access granted~]
-        say__p=1;! [6: ~**BUZZ**  Access granted~]
-        ParaContent(); print "**BUZZ**  Access granted"; .L_Say10; .L_SayX10;! [7: now the command prompt is ~>~]
-        BlkValueCopy((Global_Vars-->1), TX_L_73);
+        ! [5: now the metal door is open]
+        (Adj_72_t2_v10(I129_metal_door));
+        ! [6: say ~**BUZZ**  Access granted~]
+        say__p=1;! [7: ~**BUZZ**  Access granted~]
+        ParaContent(); print "**BUZZ**  Access granted"; .L_Say10; .L_SayX10;! [8: now the command prompt is ~>~]
+        BlkValueCopy((Global_Vars-->1), TX_L_85);
         } else {
-        ! [8: say ~Incorrect pin, door remains locked.~]
-        say__p=1;! [9: ~Incorrect pin, door remains locked.~]
-        ParaContent(); print "Incorrect pin, door remains locked."; new_line; .L_Say11; .L_SayX11;! [10: now the command prompt is ~Would you like to try again? (Yes or No) >~]
-        BlkValueCopy((Global_Vars-->1), TX_L_82);
+        ! [9: say ~Incorrect pin, door remains locked.~]
+        say__p=1;! [10: ~Incorrect pin, door remains locked.~]
+        ParaContent(); print "Incorrect pin, door remains locked."; new_line; .L_Say11; .L_SayX11;! [11: now the command prompt is ~Would you like to try again? (Yes or No) >~]
+        BlkValueCopy((Global_Vars-->1), TX_L_96);
         }
-    ! [11: reject the player's command]
+    ! [12: reject the player's command]
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_803, 803, 'context');
+    } else if (debug_rules > 1) DB_Rule(R_804, 804, 'context');
     rfalse;
 ];
 ! No specific request
 ! After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~:
-[ R_804 ;
-    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_82) == 0)))))) { ! Runs only while condition holds
-    if (debug_rules) DB_Rule(R_804, 804);
+[ R_805 ;
+    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_96) == 0)))))) { ! Runs only while condition holds
+    if (debug_rules) DB_Rule(R_805, 805);
     ! [2: if the player's command matches ~yes~ or the player's command matches ~y~]
-    if ((((SnippetMatches(players_command, Consult_Grammar_102)))) || (((SnippetMatches(players_command, Consult_Grammar_103)))))
+    if ((((SnippetMatches(players_command, Consult_Grammar_103)))) || (((SnippetMatches(players_command, Consult_Grammar_104)))))
     {! [3: now the command prompt is ~Please enter the six-digit pin code. >~]
-        BlkValueCopy((Global_Vars-->1), TX_L_81);
+        BlkValueCopy((Global_Vars-->1), TX_L_94);
         ! [4: say line break]
         say__p=1;! [5: line break]
         ParaContent(); new_line; .L_Say12; .L_SayX12;! [6: say run paragraph on]
@@ -12985,9 +13182,9 @@ Array ActionHappened --> 0 0 0 0 0;
         RulebookFails(); rtrue;
         }
     ! [9: if the player's command matches ~no~ or the player's command matches ~n~]
-    if ((((SnippetMatches(players_command, Consult_Grammar_104)))) || (((SnippetMatches(players_command, Consult_Grammar_105)))))
+    if ((((SnippetMatches(players_command, Consult_Grammar_105)))) || (((SnippetMatches(players_command, Consult_Grammar_106)))))
     {! [10: now the command prompt is ~>~]
-        BlkValueCopy((Global_Vars-->1), TX_L_73);
+        BlkValueCopy((Global_Vars-->1), TX_L_85);
         ! [11: say line break]
         say__p=1;! [12: line break]
         ParaContent(); new_line; .L_Say14; .L_SayX14;! [13: say run paragraph on]
@@ -13002,44 +13199,46 @@ Array ActionHappened --> 0 0 0 0 0;
         ParaContent(); RunParagraphOn(); .L_Say17; .L_SayX17;! [20: reject the player's command]
         RulebookFails(); rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_804, 804, 'context');
+        } else if (debug_rules > 1) DB_Rule(R_805, 805, 'context');
         rfalse;
 ];
 ! No specific request
 ! After reading a command when the command prompt is ~Please enter the six-digit pin code. >~:
-[ R_806 ;
-    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_81) == 0)))))) { ! Runs only while condition holds
-    if (debug_rules) DB_Rule(R_806, 806);
+[ R_807 ;
+    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_94) == 0)))))) { ! Runs only while condition holds
+    if (debug_rules) DB_Rule(R_807, 807);
     ! [2: increment the turn count]
     turns = turns + 1;;
-    ! [3: if the player's command matches ~928369~]
-    if (((SnippetMatches(players_command, Consult_Grammar_106))))
+    ! [3: if the player's command matches ~963829~]
+    if (((SnippetMatches(players_command, Consult_Grammar_107))))
     {! [4: now the rusted metal door is unlocked]
         (Adj_78_t2_v10(I130_rusted_metal_door));
-        ! [5: say ~**BUZZ**  Access granted~]
-        say__p=1;! [6: ~**BUZZ**  Access granted~]
-        ParaContent(); print "**BUZZ**  Access granted"; .L_Say18; .L_SayX18;! [7: now the command prompt is ~>~]
-        BlkValueCopy((Global_Vars-->1), TX_L_73);
+        ! [5: now the rusted metal door is open]
+        (Adj_72_t2_v10(I130_rusted_metal_door));
+        ! [6: say ~**BUZZ**  Access granted~]
+        say__p=1;! [7: ~**BUZZ**  Access granted~]
+        ParaContent(); print "**BUZZ**  Access granted"; .L_Say18; .L_SayX18;! [8: now the command prompt is ~>~]
+        BlkValueCopy((Global_Vars-->1), TX_L_85);
         } else {
-        ! [8: say ~Incorrect pin, door remains locked.~]
-        say__p=1;! [9: ~Incorrect pin, door remains locked.~]
-        ParaContent(); print "Incorrect pin, door remains locked."; new_line; .L_Say19; .L_SayX19;! [10: now the command prompt is ~Would you like to try again? (Yes or No) >~]
-        BlkValueCopy((Global_Vars-->1), TX_L_82);
+        ! [9: say ~Incorrect pin, door remains locked.~]
+        say__p=1;! [10: ~Incorrect pin, door remains locked.~]
+        ParaContent(); print "Incorrect pin, door remains locked."; new_line; .L_Say19; .L_SayX19;! [11: now the command prompt is ~Would you like to try again? (Yes or No) >~]
+        BlkValueCopy((Global_Vars-->1), TX_L_96);
         }
-    ! [11: reject the player's command]
+    ! [12: reject the player's command]
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_806, 806, 'context');
+    } else if (debug_rules > 1) DB_Rule(R_807, 807, 'context');
     rfalse;
 ];
 ! No specific request
 ! After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~:
-[ R_807 ;
-    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_82) == 0)))))) { ! Runs only while condition holds
-    if (debug_rules) DB_Rule(R_807, 807);
+[ R_808 ;
+    if (((((( BlkValueCompare((Global_Vars-->1), TX_L_96) == 0)))))) { ! Runs only while condition holds
+    if (debug_rules) DB_Rule(R_808, 808);
     ! [2: if the player's command matches ~yes~ or the player's command matches ~y~]
-    if ((((SnippetMatches(players_command, Consult_Grammar_107)))) || (((SnippetMatches(players_command, Consult_Grammar_108)))))
+    if ((((SnippetMatches(players_command, Consult_Grammar_108)))) || (((SnippetMatches(players_command, Consult_Grammar_109)))))
     {! [3: now the command prompt is ~Please enter the six-digit pin code. >~]
-        BlkValueCopy((Global_Vars-->1), TX_L_81);
+        BlkValueCopy((Global_Vars-->1), TX_L_94);
         ! [4: say line break]
         say__p=1;! [5: line break]
         ParaContent(); new_line; .L_Say20; .L_SayX20;! [6: say run paragraph on]
@@ -13048,9 +13247,9 @@ Array ActionHappened --> 0 0 0 0 0;
         RulebookFails(); rtrue;
         }
     ! [9: if the player's command matches ~no~ or the player's command matches ~n~]
-    if ((((SnippetMatches(players_command, Consult_Grammar_109)))) || (((SnippetMatches(players_command, Consult_Grammar_110)))))
+    if ((((SnippetMatches(players_command, Consult_Grammar_110)))) || (((SnippetMatches(players_command, Consult_Grammar_111)))))
     {! [10: now the command prompt is ~>~]
-        BlkValueCopy((Global_Vars-->1), TX_L_73);
+        BlkValueCopy((Global_Vars-->1), TX_L_85);
         ! [11: say line break]
         say__p=1;! [12: line break]
         ParaContent(); new_line; .L_Say22; .L_SayX22;! [13: say run paragraph on]
@@ -13065,7 +13264,7 @@ Array ActionHappened --> 0 0 0 0 0;
         ParaContent(); RunParagraphOn(); .L_Say25; .L_SayX25;! [20: reject the player's command]
         RulebookFails(); rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_807, 807, 'context');
+        } else if (debug_rules > 1) DB_Rule(R_808, 808, 'context');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -15950,17 +16149,17 @@ Array ActionHappened --> 0 0 0 0 0;
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
-            if (((matched_text=SnippetIncludes(Consult_Grammar_111,players_command))))
+            if (((matched_text=SnippetIncludes(Consult_Grammar_112,players_command))))
             {! [5: say ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 say__p=1;! [6: ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 ParaContent(); print (TEXT_TY_Say) (TX_R_223); new_line; .L_Say132; .L_SayX132;} else {
                 ! [7: if the player's command includes ~sit~]
-                if (((matched_text=SnippetIncludes(Consult_Grammar_112,players_command))))
+                if (((matched_text=SnippetIncludes(Consult_Grammar_113,players_command))))
                 {! [8: say ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     say__p=1;! [9: ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     ParaContent(); print (TEXT_TY_Say) (TX_R_224); new_line; .L_Say133; .L_SayX133;} else {
                     ! [10: if the player's command includes ~lie~]
-                    if (((matched_text=SnippetIncludes(Consult_Grammar_113,players_command))))
+                    if (((matched_text=SnippetIncludes(Consult_Grammar_114,players_command))))
                     {! [11: say ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         say__p=1;! [12: ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         ParaContent(); print (TEXT_TY_Say) (TX_R_225); new_line; .L_Say134; .L_SayX134;} else {
@@ -21920,14 +22119,32 @@ Constant B7_when_scene_ends = EMPTY_RULEBOOK;
 [ B8_every_turn 
     forbid_breaks ! Implied call parameter
     rv ! return value
+    original_deadflag ! saved state
     ;
-    rv = R_801();
+    original_deadflag = deadflag;
+    rv = R_800();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_801;
+        return R_800;
     }
     latest_rule_result-->0 = 0;
-    return 0; ! 1 rule(s)
+    if (original_deadflag ~= deadflag) return 0;
+    if (say__p) RulebookParBreak(forbid_breaks);
+    rv = R_802();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_802;
+    }
+    latest_rule_result-->0 = 0;
+    if (original_deadflag ~= deadflag) return 0;
+    if (say__p) RulebookParBreak(forbid_breaks);
+    rv = R_809();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_809;
+    }
+    latest_rule_result-->0 = 0;
+    return 0; ! 3 rule(s)
 ];
 [ B9_action_processing 
     forbid_breaks ! Implied call parameter
@@ -22246,10 +22463,10 @@ Constant B19_before = EMPTY_RULEBOOK;
     rv ! return value
     ;
     if (action == ##A77_talking_to) {
-        rv = R_800();
+        rv = R_801();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_800;
+            return R_801;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -22266,18 +22483,18 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
     ;
     original_deadflag = deadflag;
     if (action == ##Examine) {
-        rv = R_802();
+        rv = R_803();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_802;
+            return R_803;
         }
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_805();
+        rv = R_806();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_805;
+            return R_806;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -22462,15 +22679,6 @@ Constant B78_for_reading_a_command = EMPTY_RULEBOOK;
     original_deadflag = deadflag;
     p = parameter_value;
     parameter_value = p;
-    rv = R_803();
-    if (rv) {
-        if (rv == 2) return reason_the_action_failed;
-        return R_803;
-    }
-    latest_rule_result-->0 = 0;
-    if (original_deadflag ~= deadflag) return 0;
-    if (say__p) RulebookParBreak(forbid_breaks);
-    parameter_value = p;
     rv = R_804();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
@@ -22480,10 +22688,10 @@ Constant B78_for_reading_a_command = EMPTY_RULEBOOK;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
     parameter_value = p;
-    rv = R_806();
+    rv = R_805();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_806;
+        return R_805;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
@@ -22493,6 +22701,15 @@ Constant B78_for_reading_a_command = EMPTY_RULEBOOK;
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
         return R_807;
+    }
+    latest_rule_result-->0 = 0;
+    if (original_deadflag ~= deadflag) return 0;
+    if (say__p) RulebookParBreak(forbid_breaks);
+    parameter_value = p;
+    rv = R_808();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_808;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 4 rule(s)
@@ -28469,8 +28686,8 @@ Constant SLOW_ROUTE_FINDING;
 ! Relations.i6t: Cache Control
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant NUM_DOORS = 2;
-Constant NUM_ROOMS = 10;
+Constant NUM_DOORS = 3;
+Constant NUM_ROOMS = 12;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -28672,7 +28889,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 31 + 32;
+Constant MAX_ROUTE_LENGTH = 39 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -30186,14 +30403,16 @@ Array RulebookNames -->
         if (R == R_174) { print "Setting action variables for exiting"; rtrue; } ! rule 346
         if (R == R_242) { print "Does the player mean taking off something worn"; rtrue; } ! rule 347
         if (R == R_799) { print "When play begins"; rtrue; } ! rule 348
-        if (R == R_800) { print "Instead of talking to Joe"; rtrue; } ! rule 349
-        if (R == R_801) { print "Every turn"; rtrue; } ! rule 350
-        if (R == R_802) { print "After examining the metal door"; rtrue; } ! rule 351
-        if (R == R_803) { print "After reading a command when the command prompt is ~Please enter the six-digit pin code. >~"; rtrue; } ! rule 352
-        if (R == R_804) { print "After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~"; rtrue; } ! rule 353
-        if (R == R_805) { print "After examining the rusted metal door"; rtrue; } ! rule 354
-        if (R == R_806) { print "After reading a command when the command prompt is ~Please enter the six-digit pin code. >~"; rtrue; } ! rule 355
-        if (R == R_807) { print "After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~"; rtrue; } ! rule 356
+        if (R == R_800) { print "An every turn rule"; rtrue; } ! rule 349
+        if (R == R_801) { print "Instead of talking to Joe"; rtrue; } ! rule 350
+        if (R == R_802) { print "Every turn"; rtrue; } ! rule 351
+        if (R == R_803) { print "After examining the metal door"; rtrue; } ! rule 352
+        if (R == R_804) { print "After reading a command when the command prompt is ~Enter a six-digit pin code to unlock the metal door. >~"; rtrue; } ! rule 353
+        if (R == R_805) { print "After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~"; rtrue; } ! rule 354
+        if (R == R_806) { print "After examining the rusted metal door"; rtrue; } ! rule 355
+        if (R == R_807) { print "After reading a command when the command prompt is ~Please enter the six-digit pin code. >~"; rtrue; } ! rule 356
+        if (R == R_808) { print "After reading a command when the command prompt is ~Would you like to try again? (Yes or No) >~"; rtrue; } ! rule 357
+        if (R == R_809) { print "Every turn"; rtrue; } ! rule 358
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -49043,7 +49262,61 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_96 
+[ Parse_Name_GV96 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Consult_Grammar_97 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49063,7 +49336,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_97 
+[ Consult_Grammar_98 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49083,7 +49356,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_98 
+[ Consult_Grammar_99 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49103,7 +49376,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_99 
+[ Consult_Grammar_100 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49123,7 +49396,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_100 
+[ Consult_Grammar_101 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49143,26 +49416,6 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_101 
-    range_from ! call parameter: word number of snippet start
-
-    range_words ! call parameter: snippet length
-
-    original_wn ! first word of text parsed
-
-    group_wn ! first word matched against A/B/C/... disjunction
-
-    w ! for use by individual grammar lines
-
-    rv ! for use by individual grammar lines
-
-    ;
-    wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= '928369') jump Fail_1;
-        if ((range_words==0) || (wn-range_from==range_words)) return rv;
-        .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
-    return GPR_FAIL;
-];
 [ Consult_Grammar_102 
     range_from ! call parameter: word number of snippet start
 
@@ -49178,7 +49431,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'yes') jump Fail_1;
+        if (NextWordStopped() ~= '963829') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49198,7 +49451,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'y//') jump Fail_1;
+        if (NextWordStopped() ~= 'yes') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49218,7 +49471,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'no') jump Fail_1;
+        if (NextWordStopped() ~= 'y//') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49238,7 +49491,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'n//') jump Fail_1;
+        if (NextWordStopped() ~= 'no') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49258,7 +49511,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= '928369') jump Fail_1;
+        if (NextWordStopped() ~= 'n//') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49278,7 +49531,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'yes') jump Fail_1;
+        if (NextWordStopped() ~= '963829') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49298,7 +49551,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'y//') jump Fail_1;
+        if (NextWordStopped() ~= 'yes') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49318,7 +49571,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'no') jump Fail_1;
+        if (NextWordStopped() ~= 'y//') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49338,7 +49591,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'n//') jump Fail_1;
+        if (NextWordStopped() ~= 'no') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49358,7 +49611,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'stand') jump Fail_1;
+        if (NextWordStopped() ~= 'n//') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -49378,12 +49631,32 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
 
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'sit') jump Fail_1;
+        if (NextWordStopped() ~= 'stand') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
 [ Consult_Grammar_113 
+    range_from ! call parameter: word number of snippet start
+
+    range_words ! call parameter: snippet length
+
+    original_wn ! first word of text parsed
+
+    group_wn ! first word matched against A/B/C/... disjunction
+
+    w ! for use by individual grammar lines
+
+    rv ! for use by individual grammar lines
+
+    ;
+    wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
+        if (NextWordStopped() ~= 'sit') jump Fail_1;
+        if ((range_words==0) || (wn-range_from==range_words)) return rv;
+        .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
+    return GPR_FAIL;
+];
+[ Consult_Grammar_114 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49747,55 +50020,69 @@ Verb 'converse'
 
 
 Constant TX_PS_40 = "...";
-Constant TX_PS_73 = ">";
-Array TX_L_73 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_73;
+Constant TX_PS_85 = ">";
+Array TX_L_85 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_85;
 Constant TX_PS_3 = "An Interactive Fiction";
-Constant TX_PS_72 = "Cafeteria";
+Constant TX_PS_75 = "Broken plunger";
+Constant TX_PS_78 = "Cafeteria";
 Constant TX_PS_37 = "Cell Room 1";
 Constant TX_PS_41 = "Cell Room 2";
+Constant TX_PS_95 = "Enter a six-digit pin code to unlock the metal door. >";
+Array TX_L_95 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_95;
+Constant TX_PS_48 = "Enter a six-digit pin code to unlock the rusted metal door.";
 Constant TX_PS_46 = "Enter the six-digit pin code to unlock it.";
-Constant TX_PS_74 = "Fiction";
+Constant TX_PS_86 = "Fiction";
+Constant TX_PS_79 = "Fork";
+Constant TX_PS_80 = "Freedom";
 Constant TX_PS_44 = "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you.";
-Constant TX_PS_55 = "It reads: Door Pin Code: 9283 . . . a piece of the paper is missing. What could the last two digits be?";
+Constant TX_PS_55 = "It reads: Door Pin Code: 9283 . . . a piece of the paper is missing. There's also an arrow pointing from right to left. What could the last two digits be?";
 Constant TX_PS_2 = "Jail Break";
 Constant TX_PS_43 = "Joe";
 Constant TX_PS_39 = "Joe's Cell";
-Constant TX_PS_48 = "Please enter the six-digit pin code to unlock it.";
-Constant TX_PS_81 = "Please enter the six-digit pin code. >";
-Array TX_L_81 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_81;
-Constant TX_PS_62 = "Prison bathroom";
-Constant TX_PS_78 = "QUIT";
-Constant TX_PS_75 = "RESTART";
-Constant TX_PS_76 = "RESTORE a saved game";
+Constant TX_PS_57 = "Piece of paper";
+Constant TX_PS_94 = "Please enter the six-digit pin code. >";
+Array TX_L_94 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_94;
+Constant TX_PS_73 = "Prison Bathroom";
+Constant TX_PS_90 = "QUIT";
+Constant TX_PS_87 = "RESTART";
+Constant TX_PS_88 = "RESTORE a saved game";
 Constant TX_PS_49 = "Security Room";
-Constant TX_PS_58 = "Security Uniform";
+Constant TX_PS_61 = "Security Uniform";
 Constant TX_PS_51 = "Security camera monitor";
-Constant TX_PS_65 = "Security checkpoint 1";
-Constant TX_PS_68 = "Security checkpoint 2";
-Constant TX_PS_56 = "Storage Room";
-Constant TX_PS_57 = "The bathroom is to the north and there's a security checkpoint to the east.";
+Constant TX_PS_68 = "Security checkpoint 1";
+Constant TX_PS_71 = "Security checkpoint 2";
+Constant TX_PS_59 = "Storage Room";
+Constant TX_PS_65 = "Storage door";
+Constant TX_PS_60 = "The bathroom is to the north and there's a security checkpoint to the east.";
+Constant TX_PS_38 = "The cells are on the northern side of the room. There's another cell room to the east and the bathroom is to the south.";
 Constant TX_PS_42 = "The cells are on the northern side of the room. There's another cell room to the west and the security room is to east. The cafeteria is to the south.";
-Constant TX_PS_38 = "The cells are on the northern side of the room.There's another cell room to the east and the bathroom is to the south.";
-Constant TX_PS_80 = "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
-Array TX_L_80 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_80;
-Constant TX_PS_71 = "There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.";
-Constant TX_PS_61 = "There's a metal door to the north, the cafeteria is to the east, and the storage room is to the south.";
-Constant TX_PS_67 = "There's a security room to the north and the cafeteria to the west.";
-Constant TX_PS_64 = "There's a storage room to the west and the cafeteria to the north.";
+Constant TX_PS_93 = "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";
+Array TX_L_93 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_93;
+Constant TX_PS_77 = "There's a cell room to the north, bathroom to the west, security checkpoint to the east, and another security checkpoint to the south.";
+Constant TX_PS_74 = "There's a metal door to the north, the cafeteria is to the east, and the storage room is to the south.";
+Constant TX_PS_58 = "There's a number written on it. It is the number 69.";
+Constant TX_PS_70 = "There's a security room to the north and the cafeteria to the west.";
+Constant TX_PS_67 = "There's a storage room to the west and the cafeteria to the north.";
 Constant TX_PS_50 = "There's cell room to the west and a security checkpoint to the south.";
-Constant TX_PS_79 = "UNDO the last command";
-Constant TX_PS_59 = "Use this to disguise as a guard. As long as you act natural, they shouldn't notice that you're a prisoner.";
-Constant TX_PS_82 = "Would you like to try again? (Yes or No) >";
-Array TX_L_82 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_82;
+Constant TX_PS_83 = "Things room";
+Constant TX_PS_56 = "Trash can";
+Constant TX_PS_91 = "UNDO the last command";
+Constant TX_PS_62 = "Use this to disguise as a guard. As long as you act natural, they shouldn't notice that you're a prisoner.";
+Constant TX_PS_96 = "Would you like to try again? (Yes or No) >";
+Array TX_L_96 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_96;
 Constant TX_PS_52 = "You can see one guard in security checkpoint 1 and another guard at security checkpoint 2. Those are the only ways to escape. You have to figure out a way to get past them without being noticed.";
+Constant TX_PS_64 = "You need a key card to access this room.";
+Constant TX_PS_92 = "You win!";
+Array TX_L_92 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_92;
 Constant TX_PS_35 = "You're currently serving a life sentence.";
-Constant TX_PS_32 = "You're in a small cramped space with a think mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. ";
+Constant TX_PS_81 = "You're free! Now you don't have to sleep next to your stinky cellmate.";
+Constant TX_PS_32 = "You're in a small cramped space with a thin mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. ";
 Constant TX_PS_33 = "Your cell";
 Constant TX_PS_36 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
 Constant TX_PS_53 = "bulletin board";
-Constant TX_PS_70 = "cafeteria";
+Constant TX_PS_76 = "cafeteria";
 Constant TX_PS_11 = "containers";
 Constant TX_PS_15 = "devices";
 Constant TX_PS_17 = "directions";
@@ -49803,6 +50090,7 @@ Constant TX_PS_10 = "doors";
 Constant TX_PS_28 = "down";
 Constant TX_PS_25 = "east";
 Constant TX_PS_29 = "inside";
+Constant TX_PS_84 = "key card";
 Constant TX_PS_7 = "men";
 Constant TX_PS_45 = "metal door";
 Constant TX_PS_18 = "north";
@@ -49812,19 +50100,20 @@ Constant TX_PS_54 = "note";
 Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
-Constant TX_PS_60 = "prison bathroom";
 Constant TX_PS_16 = "regions";
 Constant TX_PS_47 = "rusted metal door";
-Constant TX_PS_63 = "security checkpoint 1";
-Constant TX_PS_66 = "security checkpoint 2";
-Constant TX_PS_69 = "security guard";
-Constant TX_PS_77 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_66 = "security checkpoint 1";
+Constant TX_PS_69 = "security checkpoint 2";
+Constant TX_PS_72 = "security guard";
+Constant TX_PS_89 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
+Constant TX_PS_63 = "storage door";
 Constant TX_PS_5 = "supporters";
 Constant TX_PS_4 = "tendo19";
 Constant TX_PS_19 = "the";
+Constant TX_PS_82 = "things room";
 Constant TX_PS_27 = "up";
 Constant TX_PS_12 = "vehicles";
 Constant TX_PS_26 = "west";
@@ -57196,56 +57485,103 @@ Array BC_207 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_208 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_209 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_210 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_211 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_211 --> PACKED_TEXT_STORAGE TX_PS_40;
 Array BC_212 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_213 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_214 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_215 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_216 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_217 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_214 --> PACKED_TEXT_STORAGE TX_PS_11;
+Array BC_215 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_216 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_217 --> PACKED_TEXT_STORAGE TX_PS_58;
 Array BC_218 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_219 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_220 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_221 --> PACKED_TEXT_STORAGE TX_PS_60;
-Array BC_222 --> PACKED_TEXT_STORAGE TX_PS_61;
-Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_221 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_222 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_60;
 Array BC_224 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_225 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_226 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_227 --> PACKED_TEXT_STORAGE TX_PS_63;
-Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_64;
-Array BC_229 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_227 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_229 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_230 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_231 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_232 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_66;
-Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_67;
-Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_64;
+Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_65;
 Array BC_236 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_237 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_238 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_40;
-Array BC_241 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_242 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_243 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_238 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_239 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_241 --> PACKED_TEXT_STORAGE TX_PS_67;
+Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_243 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_244 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_245 --> PACKED_TEXT_STORAGE TX_PS_70;
-Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_247 --> PACKED_TEXT_STORAGE TX_PS_72;
-Array BC_248 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_245 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_246 --> PACKED_TEXT_STORAGE TX_PS_69;
+Array BC_247 --> PACKED_TEXT_STORAGE TX_PS_70;
+Array BC_248 --> PACKED_TEXT_STORAGE TX_PS_71;
 Array BC_249 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_250 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_251 --> PACKED_TEXT_STORAGE TX_PS_73;
-Array BC_252 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_253 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_254 --> PACKED_TEXT_STORAGE TX_PS_74;
+Array BC_251 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_252 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_253 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_254 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_255 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_256 --> PACKED_TEXT_STORAGE TX_PS_75;
-Array BC_257 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_258 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_259 --> PACKED_TEXT_STORAGE TX_PS_78;
-Array BC_260 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_256 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_257 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_258 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_259 --> PACKED_TEXT_STORAGE TX_PS_74;
+Array BC_260 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_261 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_262 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_263 --> PACKED_TEXT_STORAGE TX_PS_75;
+Array BC_264 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_265 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_266 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_267 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_268 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_269 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_270 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_271 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_272 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_273 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_274 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_275 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_276 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_277 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_278 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_279 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_280 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_281 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_282 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_283 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_284 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_285 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_286 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_287 --> PACKED_TEXT_STORAGE TX_PS_83;
+Array BC_288 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_289 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_290 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_291 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_292 --> PACKED_TEXT_STORAGE TX_PS_84;
+Array BC_293 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_294 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_295 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_296 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_297 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_298 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_299 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_300 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_301 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_302 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_303 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_304 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_305 --> PACKED_TEXT_STORAGE TX_PS_89;
+Array BC_306 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_91;
 
 
 

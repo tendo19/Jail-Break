@@ -1,6 +1,6 @@
 "Jail Break" by tendo19
 
-When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard by never being in the same room as him. The only place you're safe from is in the cell."
+When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard. Never be in the same room as him or he'll catch you. The only place you're safe from is in the cell."
 
 
 The description of the player is "You're currently serving a life sentence."
@@ -8,7 +8,7 @@ The player is in your cell.
 
 Your Cell is a room. 
 It is north of Cell Room 1.
-The description is "You're in a small cramped space with a think mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. "
+The description is "You're in a small cramped space with a thin mattress and a filthy toilet. You notice that your cell is not fully locked. Go south to leave your cell. "
 
 Joe's Cell is a room.
 It is north of Cell Room 2.
@@ -16,14 +16,14 @@ The description is "..."
 
 Cell Room 1 is a room.
 It is west of Cell Room 2 and north of the metal door.
-The description is "The cells are on the northern side of the room.There's another cell room to the east and the bathroom is to the south."
+The description is "The cells are on the northern side of the room. There's another cell room to the east and the bathroom is to the south."
 
 Cell Room 2 is a room.
 It is east of Cell Room 1 and north of the rusted metal door and west of Security Room.
 The description is "The cells are on the northern side of the room. There's another cell room to the west and the security room is to east. The cafeteria is to the south."
 
 Storage Room is a room.
-It is south of prison bathroom and west of security checkpoint 1.
+It is south of storage door and west of security checkpoint 1.
 The description is "The bathroom is to the north and there's a security checkpoint to the east."
 
 Security Room is a room.
@@ -31,7 +31,7 @@ It is east of Cell Room 2 and north of security checkpoint 2.
 The description is "There's cell room to the west and a security checkpoint to the south."
 
 Prison Bathroom is a room.
-It is south of metal door and west of cafeteria and north of storage room. 
+It is south of metal door and west of cafeteria and north of storage door. 
 The description is "There's a metal door to the north, the cafeteria is to the east, and the storage room is to the south."
 
 Cafeteria is a room.
@@ -46,13 +46,13 @@ Security Checkpoint 2 is a room.
 It is south of security room and east of cafeteria.
 The description is "There's a security room to the north and the cafeteria to the west."
 
-[Freedom is a room.
+Freedom is a room.
 It is south of security checkpoint 2 and east of security checkpoint 1.
 The description is "You're free! Now you don't have to sleep next to your stinky cellmate."
 
 An every turn rule:
-	if player is in freedom:
-		end the story saying "Yay!".]
+	If player is in freedom:
+		end the story saying "You win!".
 
  Joe is a man in cell room 2.
 The description of Joe is "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you."
@@ -81,10 +81,6 @@ Cell Room 1	Cell Room 2
 Cell Room 2	Security Room
 
 Every turn:
-	if security guard is in a room (called croom):
-		let nroom be the next space corresponding to a current space of croom in the Table of security guard's movements;
-		move security guard to nroom;
-		say "The security guard is in [croom] and is headed towards [nroom].";
 	If player is not in Your Cell:
 		If security guard is visible:
 			if player is not wearing security uniform:
@@ -95,75 +91,14 @@ Every turn:
 				end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";		
 	If player is in Your Cell:
 		If security guard is in cell room 1:
-			say "You see the security guard walking to the next room.";			
+			say "You see the security guard heading to the next room.";			
 	If player is in Joe's Cell:
 		If security guard is in cell room 2:
-			say "You see the security guard walking to the next room.";
-
-
-	
-
-[Table of security guard's movement
-destination
-Security Checkpoint 2
-Cafeteria
-Security Checkpoint 1
-Storage Room
-Prison Bathroom
-Cell Room 1
-Cell Room 2
-Security Room
-Security Checkpoint 2
-Cafeteria
-Security Checkpoint 1
-Storage Room
-Prison Bathroom
-Cell Room 1
-Cell Room 2
-Security Room
-Security Checkpoint 2
-Cafeteria
-Security Checkpoint 1
-Storage Room
-Prison Bathroom
-Cell Room 1
-Cell Room 2
-Security Room
-Security Checkpoint 2
-Cafeteria
-Security Checkpoint 1
-Storage Room
-Prison Bathroom
-Cell Room 1
-Cell Room 2
-Security Room
-
-Every turn when security guard is active:
-	repeat through the Table of security guard's movement:
-		let last space be the location of security guard;
-		say "Security is in [the destination entry]. Security guard is heading ";
-		move security guard to destination entry;
-		[if security guard can be seen by the player, say "Security guard arrives from [the destination entry].";]
-		blank out the whole row;
-		break.
-
-Security guard can be active or passive. He is active.]
-
-[Every turn rule:
-	If player is not in Your Cell:
-		If security guard is visible:
-			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";			
-	If player is not in Joe's Cell:	
-		If security guard is visible:
-			end the story saying "The security guard sees you and chases you. You trip on a pebble and get caught. You have been moved to a higher security cell. Good luck escaping from there.";		
-	If player is in Your Cell:
-		If security guard is in cell room 1:
-		say "The security guard continues walking to the next room.";				
-	If player is in Joe's Cell:
-		If security guard is in cell room 2:
-		say "The security guard continues walking to the next room."]
-
-
+			say "You see the security guard heading to the next room.";
+	if security guard is in a room (called croom):
+		let nroom be the next space corresponding to a current space of croom in the Table of security guard's movements;
+		move security guard to nroom;
+		say "The security guard is in [croom] and is headed towards [nroom]."
 
 Security Uniform is a thing.
 It is wearable.
@@ -183,7 +118,16 @@ The description is "..."
 
 The note is a thing in the bulletin board.
 It is not portable.
-The description is "It reads: Door Pin Code: 9283 . . . a piece of the paper is missing. What could the last two digits be?"
+The description is "It reads: Door Pin Code: 9283 . . . a piece of the paper is missing. There's also an arrow pointing from right to left. What could the last two digits be?"
+
+Trash can is a thing.
+It is a container.
+It is not portable.
+It is in the security room.
+The description is "..."
+
+Piece of paper is a thing in the trash can.
+The description is "There's a number written on it. It is the number 69."
 
 The metal door is north of prison bathroom.
 The metal door is a door.
@@ -198,10 +142,11 @@ The description of the metal door is "Enter the six-digit pin code to unlock it.
 		now the command prompt is "Please enter the six-digit pin code. >";
 		continue the action.
    
-After reading a command when the command prompt is "Please enter the six-digit pin code. >":
+After reading a command when the command prompt is "Enter a six-digit pin code to unlock the metal door. >":
 	increment the turn count;
-	if the player's command matches "928369": 
+	if the player's command matches "963829": 
 		now the metal door is unlocked;
+		now the metal door is open;
 		say "**BUZZ**  Access granted";
 		now the command prompt is ">";
 	otherwise:
@@ -227,16 +172,16 @@ After reading a command when the command prompt is "Would you like to try again?
 		
 
 
-
-The description of the rusted metal door is "Please enter the six-digit pin code to unlock it."
+The description of the rusted metal door is "Enter a six-digit pin code to unlock the rusted metal door."
 	After examining the rusted metal door:
 		now the command prompt is "Please enter the six-digit pin code. >";
 		continue the action.
    
 After reading a command when the command prompt is "Please enter the six-digit pin code. >":
 	increment the turn count;
-	if the player's command matches "928369": 
+	if the player's command matches "963829":
 		now the rusted metal door is unlocked;
+		now the rusted metal door is open;
 		say "**BUZZ**  Access granted";
 		now the command prompt is ">";
 	otherwise:
@@ -259,4 +204,35 @@ After reading a command when the command prompt is "Would you like to try again?
 		say line break;
 		say run paragraph on;
 		reject the player's command.
+		
+Storage door is a door.
+It is north of the storage room and south of the prison bathroom.
+The description is "You need a key card to access this room."
+It is locked and lockable. 
+The key card unlocks storage door.
+
+Fork is a thing in the cafeteria.
+The description is "..."
+
+Broken plunger is a thing in the prison bathroom.
+The description is "..."
+Understand "plunger" as broken plunger.
+
+
+Key card is an object.
+Key card is in things room.
+
+Every turn:
+	If player is carrying fork:
+		if player is carrying plunger:
+			move key card to cell room 2.
+
+Things room is a room.
+It is east of freedom.
+
+
+
+
+
+
 
