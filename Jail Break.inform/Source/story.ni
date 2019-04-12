@@ -54,15 +54,9 @@ An every turn rule:
 	If player is in freedom:
 		end the story saying "You win!".
 
- Joe is a man in cell room 2.
+Joe is a man in cell room 2.
 The description of Joe is "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you."
-
-Instead of talking to Joe: 
-	say "'How can I escape this place?' you ask.[paragraph break]'This prison is quite complex. You need to reach one of the security checkpoints without being caught,' he replies. [paragraph break] You say, 'Is there any way to sneak past the guards?'[paragraph break]'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'"
-
-Understand "talk to [someone]" as talking to. Understand "talk to [something]" as talking to. Talking to is an action applying to one visible thing.
-
-Understand "talk to Joe" or "converse with Joe" as talking to.
+Understand "him" as Joe.
 
 
 A security guard is a man in security checkpoint 2.
@@ -211,24 +205,75 @@ The description is "You need a key card to access this room."
 It is locked and lockable. 
 The key card unlocks storage door.
 
-Fork is a thing in the cafeteria.
+Ceramic plate is a thing in the cafeteria.
 The description is "..."
+Understand "plate" as ceramic plate.
 
 Broken plunger is a thing in the prison bathroom.
-The description is "..."
+The description is "The head of the plunger seems to be missing."
 Understand "plunger" as broken plunger.
 
+Breaking is an action applying to one visible thing. Understand "break" as breaking.
+
+Instead of breaking ceramic plate:
+	say "You drop the plate on the floor. It shatters and makes a really loud sound. You immediately hear footsteps coming towards you. Get out of there!";
+	remove ceramic plate from play;
+	move security guard to cafeteria;
+	move key card to cell room 2.
 
 Key card is an object.
 Key card is in things room.
 
-Every turn:
-	If player is carrying fork:
-		if player is carrying plunger:
-			move key card to cell room 2.
-
 Things room is a room.
 It is east of freedom.
+
+
+Understand "talk to [someone]" as talking to. Understand "talk to [something]" as talking to. Talking to is an action applying to one visible thing.
+
+Understand "talk to Joe" or "converse with Joe" as talking to.
+
+Instead of talking to someone:
+	say "They don't answer you."
+	
+Instead of talking to something:
+	say "Talking to an inanimate object will accomplish nothing."
+	
+Instead of talking to Joe: 
+	say "'Sup Joe,' you say.[paragraph break]'What do you want?' he replies.[paragraph break]You can ask him about [bold type]the prison layout[roman type] or [bold type]the security guards.[roman type]"
+
+Instead of asking Joe about "the prison layout":
+	say "Hi."
+	
+Instead of asking Joe about "prison layout":
+	say "Hi."
+	
+Instead of asking Joe about "the security guards":
+	say "Yo."
+	
+Instead of asking Joe about "security guards":
+	say "Yo."
+
+Instead of giving something to Joe:
+	say "Joe says, 'Don't give me your trash,' and denies your offer."
+
+
+	
+[If the key card is in cell room 2:
+	If player is in cell room 2:
+		say "It seems like the security guard dropped his keycard.".]
+	
+
+
+Security guard 1 is a man in security checkpoint 1.
+The printed name of security guard 1 is "a security guard."
+
+Security guard 2 is a man in security checkpoint 2.
+The printed name of security guard 2 is "a security guard."
+	
+	
+	
+	['How can I escape this place?' you ask.[paragraph break]'This prison is quite complex. You need to reach one of the security checkpoints without being caught,' he replies. [paragraph break] You say, 'Is there any way to sneak past the guards?'[paragraph break]'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'"]
+
 
 
 
