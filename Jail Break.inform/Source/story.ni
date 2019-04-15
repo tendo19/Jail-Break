@@ -50,14 +50,6 @@ Freedom is a room.
 It is south of security checkpoint 2 and east of security checkpoint 1.
 The description is "You're free! Now you don't have to sleep next to your stinky cellmate."
 
-An every turn rule:
-	If player is in freedom:
-		end the story saying "You win!".
-
-Joe is a man in cell room 2.
-The description of Joe is "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you."
-Understand "him" as Joe.
-
 
 A security guard is a man in security checkpoint 2.
 The description of security guard is "..."
@@ -92,7 +84,13 @@ Every turn:
 	if security guard is in a room (called croom):
 		let nroom be the next space corresponding to a current space of croom in the Table of security guard's movements;
 		move security guard to nroom;
-		say "The security guard is in [croom] and is headed towards [nroom]."
+		say "The security guard is in [croom] and is headed towards [nroom].";
+	If player is in freedom:
+		end the story saying "You win!";
+	If key card is in cell room 2:
+		If player is in cell room 2:
+			say "It seems like the security guard dropped his keycard.".
+
 
 Security Uniform is a thing.
 It is wearable.
@@ -213,7 +211,7 @@ Broken plunger is a thing in the prison bathroom.
 The description is "The head of the plunger seems to be missing."
 Understand "plunger" as broken plunger.
 
-Breaking is an action applying to one visible thing. Understand "break" as breaking.
+Breaking is an action applying to one visible thing. Understand "break", "throw", "drop" as breaking.
 
 Instead of breaking ceramic plate:
 	say "You drop the plate on the floor. It shatters and makes a really loud sound. You immediately hear footsteps coming towards you. Get out of there!";
@@ -223,46 +221,43 @@ Instead of breaking ceramic plate:
 
 Key card is an object.
 Key card is in things room.
+Understand "keycard", "card", "key" as key card.
 
 Things room is a room.
 It is east of freedom.
 
 
-Understand "talk to [someone]" as talking to. Understand "talk to [something]" as talking to. Talking to is an action applying to one visible thing.
+Joe is a person in cell room 2.
+The description of Joe is "He is your cellmate. He has been in jail for 50 years and has no intentions of escaping. He knows a lot more about this prison than you."
+Understand "him" as Joe.
 
-Understand "talk to Joe" or "converse with Joe" as talking to.
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" as talking to.
 
 Instead of talking to someone:
 	say "They don't answer you."
 	
 Instead of talking to something:
 	say "Talking to an inanimate object will accomplish nothing."
-	
+
 Instead of talking to Joe: 
 	say "'Sup Joe,' you say.[paragraph break]'What do you want?' he replies.[paragraph break]You can ask him about [bold type]the prison layout[roman type] or [bold type]the security guards.[roman type]"
 
 Instead of asking Joe about "the prison layout":
-	say "Hi."
+	say "There are eight rooms and two exits. If you want to leave, you'll have to go through one of the security checkpoints, but [bold type]be careful because there are guards there.[roman type]You need some kind of disguise to sneak past them."
 	
 Instead of asking Joe about "prison layout":
-	say "Hi."
+	say "There are eight rooms and two exits. If you want to leave, you'll have to go through one of the security checkpoints, but [bold type]be careful because there are guards there.[roman type]You need some kind of disguise to sneak past them."
 	
 Instead of asking Joe about "the security guards":
-	say "Yo."
+	say "There are three security guards in this prison. One of them walks around the prison in the same pattern. One of them is guarding security checkpoint 1 and the last one is guarding security checkpoint 2. You need to find a way to sneak past all three of them if you want to escape. Whatever you do, don't make any noise."
 	
 Instead of asking Joe about "security guards":
-	say "Yo."
+	say "There are three security guards in this prison. The first one walks around the prison. You should avoid being in the same room as him. He always takes same route, so you should be able to figure where he's headed.[paragraph break]One of them is guarding security checkpoint 1 and the last one is guarding security checkpoint 2. You need to find a way to sneak past all three of them if you want to escape. Whatever you do, don't make any noise.[paragraph break]The only place you're truly safe is in the cells. If the guard comes, just go into one of the cells and don't act suspicious."
 
 Instead of giving something to Joe:
-	say "Joe says, 'Don't give me your trash,' and denies your offer."
-
-
+	say "Joe says, 'Don't give me your trash,' and declines your offer."
 	
-[If the key card is in cell room 2:
-	If player is in cell room 2:
-		say "It seems like the security guard dropped his keycard.".]
-	
-
 
 Security guard 1 is a man in security checkpoint 1.
 The printed name of security guard 1 is "a security guard."
@@ -270,8 +265,20 @@ The printed name of security guard 1 is "a security guard."
 Security guard 2 is a man in security checkpoint 2.
 The printed name of security guard 2 is "a security guard."
 	
-	
-	
+After going to security checkpoint 1:
+	if the player is wearing security uniform:
+		say "Act natural, the exit is right in front of you!";
+	otherwise:
+		end the story finally saying "The guard sees you. You sprint towards the exit, but he grabs you before you can get away. "
+
+After going to security checkpoint 2:
+	if the player is wearing security uniform:
+		say "Act natural, the exit is right in front of you!";
+	otherwise:
+		end the story finally saying "The guard sees you. You sprint towards the exit, but he grabs you before you can get away. "
+
+
+
 	['How can I escape this place?' you ask.[paragraph break]'This prison is quite complex. You need to reach one of the security checkpoints without being caught,' he replies. [paragraph break] You say, 'Is there any way to sneak past the guards?'[paragraph break]'Whatever you do, don't be in the same room as the security guard. He always takes the same path so you should be able to figure out where he is.'"]
 
 

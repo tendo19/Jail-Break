@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1391">
+<Skein rootNode="node-1397">
     <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
-    <item nodeId="node-1391">
+    <item nodeId="node-1397">
         <command xml:space="preserve">TalkJoe</command>
         <result xml:space="preserve">
 
@@ -16,10 +16,10 @@ You can see Joe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1394"></child>
+        <children><child nodeId="node-1398"></child>
         </children>
     </item>
-    <item nodeId="node-1394">
+    <item nodeId="node-1398">
         <command xml:space="preserve">talk to Joe</command>
         <result xml:space="preserve">You must supply a noun.
 
