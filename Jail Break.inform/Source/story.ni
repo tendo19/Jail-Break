@@ -1,4 +1,13 @@
 "Jail Break" by tendo19
+The release number is 1. 
+The story creation year is 2019. 
+The story headline is "A prison-escape game". 
+The story genre is "Puzzle". 
+The story description is "A game where a player tries to escape from prison without being caught by the guards.".
+Release along with a website, a file of "Jail Cell" called "Jailcell.png". 
+Release along with an interpreter.
+Release along with the library card.
+
 
 When play begins: say "You beg to the guard to let you free. 'If you can’t do the time, don’t do the crime,' he replies coldly. You’ll go insane if you stay in prison any longer. Find a way to escape without being caught by the guard. Never be in the same room as him or he'll catch you. The only place you're safe from him is in the the cells."
 

@@ -7,13 +7,20 @@
         </identification>
         <bibliographic>
             <title>Jail Break</title>
-            <author>tendo19</author>
-            <headline>An Interactive Fiction</headline>
-            <genre>Fiction</genre>
+            <author>tendo19 The release number is 1</author>
+            <headline>A prison-escape game</headline>
+            <genre>Puzzle</genre>
             <firstpublished>2019</firstpublished>
+            <description>A game where a player tries to escape from prison without being caught by the guards.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>Jailcell.png</leafname>
+                <description>Jail Cell</description>
+            </auxiliary>
+        </resources>
         <releases>
             <attached>
                 <release>

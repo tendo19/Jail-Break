@@ -15,6 +15,8 @@ storyfile "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Build/ou
 ifiction "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Metadata.iFiction" include
 cover "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+release file "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+release file "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Miscellany/Small Cover.jpg"
 
 ! Placeholder variables
 
@@ -22,17 +24,36 @@ placeholder [IFID] = "D2E5C478-2E43-44B4-AE3C-EEBEE7AE013B"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2019"
 placeholder [TITLE] = "Jail Break"
-placeholder [AUTHOR] = "tendo19"
-placeholder [BLURB] = "A work of interactive fiction."
+placeholder [AUTHOR] = "tendo19 The release number is 1"
+placeholder [BLURB] = "A game where a player tries to escape from prison without being caught by the guards."
 
 ! Other material to release
 
+ifiction
+auxiliary "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.materials/Jailcell.png" "Jail Cell" "--"
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "Jail Break.gblorb.js"
+template path "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.materials/Templates"
+template path "/Users/tendo19/Library/Inform/Templates"
+template path "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.inform/Build/output.ulx" to "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.materials/Release/interpreter/Jail Break.gblorb.js"
+
+! Website instructions
+
+template path "/Users/tendo19/Documents/GitHub/Jail-Break/Jail Break.materials/Templates"
+template path "/Users/tendo19/Library/Inform/Templates"
+template path "/Volumes/Inform/Inform.app/Contents/Resources/Internal/Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line7"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line8"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
